@@ -2,23 +2,22 @@
 
 window.onload = function() {
 
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-
-    const canvasCopy = document.getElementById('canvasCopy');
-    const ctxCopy = canvasCopy.getContext('2d');
-
-    const transparencia = 255;
+    //constants
+    const CANVAS = document.getElementById('canvas');
+    const CTX = CANVAS.getContext('2d');
+    const CANVAS_COPY = document.getElementById('canvasCopy');
+    const CTX_COPY = CANVAS_COPY.getContext('2d');
+    const TRANSPARENCY = 255;
 
     let selectedTool = document.querySelector('#selectedTool');
-
     let image;
     let imageData;
 
+    //rgb
     let red;
     let green;
     let blue;
-
+    //mouse events
     let brush = false;
     let rubber = false;
     let color;
@@ -26,49 +25,63 @@ window.onload = function() {
     let mouseX;
     let mouseY;
 
-    //Descargar Imagen
+    //buttons
+    //  filters
+    document.querySelector('#filterOriginal').addEventListener('click', resetImage);
+    document.querySelector('#filterBlackAndWhite').addEventListener('click', black_white);
+    document.querySelector('#filterBinarization').addEventListener('click', binarization);
+    document.querySelector('#filterSepia').addEventListener('click', sepia);
+    document.querySelector('#filterNegative').addEventListener('click', negative);
+    document.querySelector('#filterBlur').addEventListener('click', blur);
+    document.querySelector('#brillo').addEventListener('click', brightness);
+    //  new canvas && upload image
+    document.querySelector('#newCanvas').addEventListener('click', newCanvas);
+    document.querySelector('#canvasImage').addEventListener('change', uploadImage);
+    //  download canvas
     document.querySelector('#downloadCanvas').addEventListener('click', e => {
-        document.querySelector('#downloadCanvas').href = canvasCopy.toDataURL('image/jpg');
+        document.querySelector('#downloadCanvas').href = CANVAS_COPY.toDataURL('image/jpg');
     });
 
-    canvasCopy.addEventListener('mousedown', r => {
+    //Functions
+
+    CANVAS_COPY.addEventListener('mousedown', r => {
         mouse = true;
         mouseX = event.offsetX;
         mouseY = event.offsetY;
 
     });
 
-    canvasCopy.addEventListener('mouseup', r => {
+    CANVAS_COPY.addEventListener('mouseup', r => {
         mouse = false;
     });
 
-    canvasCopy.addEventListener('mousemove', r => {
+    CANVAS_COPY.addEventListener('mousemove', r => {
         if (mouse) {
             draw();
         }
     });
 
     document.querySelector('#activeBrush').addEventListener('click', r => {
-        ctxCopy.beginPath();
-        ctxCopy.closePath();
-        ctxCopy.stroke();
+        CTX_COPY.beginPath();
+        CTX_COPY.closePath();
+        CTX_COPY.stroke();
         brush = !brush;
         color = 'rgb(0, 0, 0)';
         if (rubber) {
             rubber = false;
         }
         if (brush) {
-            selectedTool.innerHTML = 'Pincel'
-            canvasCopy.style.cursor = "crosshair";
+            selectedTool.innerHTML = 'Lapiz'
+            CANVAS_COPY.style.cursor = "crosshair";
         } else {
-            canvasCopy.style.cursor = "default";
+            CANVAS_COPY.style.cursor = "default";
         }
     });
 
     document.querySelector('#activeRubber').addEventListener('click', r => {
-        ctxCopy.beginPath();
-        ctxCopy.closePath();
-        ctxCopy.stroke();
+        CTX_COPY.beginPath();
+        CTX_COPY.closePath();
+        CTX_COPY.stroke();
         rubber = !rubber;
         color = 'rgb(255, 255, 255)';
         if (brush) {
@@ -76,177 +89,27 @@ window.onload = function() {
         }
         if (rubber) {
             selectedTool.innerHTML = 'Goma de borrar'
-            canvasCopy.style.cursor = "crosshair";
+            CANVAS_COPY.style.cursor = "crosshair";
         } else {
-            canvasCopy.style.cursor = "default";
+            CANVAS_COPY.style.cursor = "default";
         }
     });
 
-    //Cargar Imagen a traves de input file
-    document.querySelector('#canvasImage').addEventListener('change', r => {
-        const FILE = document.querySelector('#canvasImage').files[0];
-        const reader = new FileReader();
-
-        if (FILE) {
-            reader.readAsDataURL(FILE);
-        } else {
-
-        }
-
-        reader.addEventListener("load", function() {
-            image = new Image();
-            image.src = reader.result;
-            console.log(reader.result);
-            image.onload = function() {
-                ctx.drawImage(image, 0, 0);
-                imageData = ctx.getImageData(0, 0, image.width, image.height);
-                ctx.putImageData(imageData, 0, 0);
-                ctxCopy.drawImage(image, 0, 0);
-                resetImage();
-
-            }
-            document.querySelector('#thumbnailContainer').classList.remove('invisible');
-            document.querySelectorAll('.btnFilters').forEach(b => {
-                b.disabled = false;
-            });
-
-        }, false);
-    });
-
-    //Nuevo Canvas
-    document.querySelector('#newCanvas').addEventListener('click', r => {
+    function newCanvas() {
         document.querySelector('#canvasImage').value = "";
-        ctxCopy.beginPath();
-        ctxCopy.clearRect(0, 0, canvasCopy.width, canvasCopy.height);
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        CTX_COPY.beginPath();
+        CTX_COPY.clearRect(0, 0, CANVAS_COPY.width, CANVAS_COPY.height);
+        CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
         imageData = '';
         image = '';
         document.querySelectorAll('.btnFilters').forEach(b => {
             b.disabled = true;
         });
-    });
+    }
 
-    //Aumentar Brillo a la Imagen
-    document.querySelector('#brillo').addEventListener('click', r => {
-        var r = 0;
-        var g = 0;
-        var b = 0;
-        const brillo = 30;
-        var imageData = ctxCopy.getImageData(0, 0, image.height, image.width);
-        console.log(imageData);
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
-                r = getRed(x, y, imageData) + brillo;
-                g = getGreen(x, y, imageData) + brillo;
-                b = getBlue(x, y, imageData) + brillo;
-                setPixel(imageData, x, y, r, g, b, transparencia);
-            }
-        }
-        selectedTool.innerHTML = 'Brillo'
-
-        ctxCopy.putImageData(imageData, 0, 0);
-        console.log('brillo');
-    });
-
-    //Filtro - Foto original
-    document.querySelector('#filterOriginal').addEventListener('click', r => {
-        resetImage();
-    });
-    //Filtro - Blanco y Negro
-    document.querySelector('#filterBlackAndWhite').addEventListener('click', r => {
-        resetImage();
-
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
-                red = getRed(x, y, imageData);
-                green = getGreen(x, y, imageData);
-                blue = getBlue(x, y, imageData);
-
-                const black_white = red * .3 + green * .59 + blue * .11;
-
-                setPixel(imageData, x, y, black_white, black_white, black_white, transparencia);
-            }
-        }
-
-        ctxCopy.putImageData(imageData, 0, 0);
-        selectedTool.innerHTML = 'Blanco y Negro'
-
-    });
-    //Filtro - Binarizacion
-    document.querySelector('#filterBinarization').addEventListener('click', r => {
-        resetImage();
-
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
-                red = getRed(x, y, imageData);
-                green = getGreen(x, y, imageData);
-                blue = getBlue(x, y, imageData);
-
-                let temp;
-
-                if ((red + green + blue) < (255 / 2)) {
-                    temp = 0;
-                } else {
-                    temp = 255;
-                }
-
-
-                setPixel(imageData, x, y, temp, temp, temp, transparencia);
-            }
-        }
-
-        ctxCopy.putImageData(imageData, 0, 0);
-        selectedTool.innerHTML = 'Binarizacion'
-
-    });
-    //Filtro - Sepia
-    document.querySelector('#filterSepia').addEventListener('click', r => {
-        resetImage();
-
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
-                red = getRed(x, y, imageData);
-                green = getGreen(x, y, imageData);
-                blue = getBlue(x, y, imageData);
-
-                const redFilter = Math.floor(0.393 * red + 0.769 * green + 0.189 * blue);
-                const greenFilter = Math.floor(0.349 * red + 0.686 * green + 0.168 * blue);
-                const blueFilter = Math.floor(0.272 * red + 0.534 * green + 0.131 * blue);
-
-                setPixel(imageData, x, y, redFilter, greenFilter, blueFilter, transparencia);
-            }
-        }
-
-        ctxCopy.putImageData(imageData, 0, 0);
-        selectedTool.innerHTML = 'Sepia'
-
-    });
-    //Filtro - Negativo
-    document.querySelector('#filterNegative').addEventListener('click', r => {
-        resetImage();
-
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
-                red = 255 - getRed(x, y, imageData);
-                green = 255 - getGreen(x, y, imageData);
-                blue = 255 - getBlue(x, y, imageData);
-
-                setPixel(imageData, x, y, red, green, blue, transparencia);
-            }
-        }
-
-        ctxCopy.putImageData(imageData, 0, 0);
-        selectedTool.innerHTML = 'Negativo'
-
-    });
-
-
-
-
-    //Cada ves que se llama a este metodo, se reemplaza la foto copia, por la original.
     function resetImage() {
-        imageData = ctx.getImageData(0, 0, image.width, image.height);
-        ctxCopy.putImageData(imageData, 0, 0);
+        imageData = CTX.getImageData(0, 0, image.width, image.height);
+        CTX_COPY.putImageData(imageData, 0, 0);
     }
 
     function getRed(x, y, imageData) {
@@ -274,45 +137,192 @@ window.onload = function() {
 
     function draw() {
         if ((brush) || (rubber)) {
-            ctxCopy.moveTo(mouseX, mouseY);
-            ctxCopy.lineTo(event.offsetX, event.offsetY);
-            ctxCopy.lineWidth = 5;
-            ctxCopy.strokeStyle = color;
-            ctxCopy.stroke();
+            CTX_COPY.moveTo(mouseX, mouseY);
+            CTX_COPY.lineTo(event.offsetX, event.offsetY);
+            CTX_COPY.lineWidth = 5;
+            CTX_COPY.strokeStyle = color;
+            CTX_COPY.stroke();
 
             mouseX = event.offsetX;
             mouseY = event.offsetY;
         } else {
-            ctxCopy.closePath();
-            ctxCopy.stroke();
+            CTX_COPY.closePath();
+            CTX_COPY.stroke();
         }
     }
 
+    function uploadImage() {
+        const FILE = document.querySelector('#canvasImage').files[0];
+        const reader = new FileReader();
 
-    //Filtros
+        if (FILE) {
+            reader.readAsDataURL(FILE);
+        } else {
 
-    function blur() {
+        }
+        newCanvas();
+
+        reader.addEventListener("load", function() {
+            image = new Image();
+            image.src = reader.result;
+            console.log(reader.result);
+            image.onload = function() {
+                CTX.drawImage(image, 0, 0);
+                CTX_COPY.drawImage(image, 0, 0);
+                imageData = CTX.getImageData(0, 0, image.width, image.height);
+                CTX.putImageData(imageData, 0, 0);
+                resetImage();
+            }
+            document.querySelector('#thumbnailContainer').classList.remove('invisible');
+            document.querySelectorAll('.btnFilters').forEach(b => {
+                b.disabled = false;
+            });
+
+        }, false);
+    }
+
+    function sepia() {
         resetImage();
 
-        for (let x = 0; x < image.height; x++) {
-            for (let y = 0; y < image.width; y++) {
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
                 red = getRed(x, y, imageData);
                 green = getGreen(x, y, imageData);
                 blue = getBlue(x, y, imageData);
 
+                const redFilter = Math.floor(0.393 * red + 0.769 * green + 0.189 * blue);
+                const greenFilter = Math.floor(0.349 * red + 0.686 * green + 0.168 * blue);
+                const blueFilter = Math.floor(0.272 * red + 0.534 * green + 0.131 * blue);
 
-
-                setPixel(imageData, x, y, redFilter, greenFilter, blueFilter, transparencia);
+                setPixel(imageData, x, y, redFilter, greenFilter, blueFilter, TRANSPARENCY);
             }
         }
 
-        ctxCopy.putImageData(imageData, 0, 0);
-        selectedTool.innerHTML = 'Desenfoque'
+        CTX_COPY.putImageData(imageData, 0, 0);
+        selectedTool.innerHTML = 'Sepia'
     }
 
+    function black_white() {
+        resetImage();
+
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                red = getRed(x, y, imageData);
+                green = getGreen(x, y, imageData);
+                blue = getBlue(x, y, imageData);
+
+                const black_white = red * .3 + green * .59 + blue * .11;
+
+                setPixel(imageData, x, y, black_white, black_white, black_white, TRANSPARENCY);
+            }
+        }
+
+        CTX_COPY.putImageData(imageData, 0, 0);
+        selectedTool.innerHTML = 'Blanco y Negro'
+
+    }
+
+    function negative() {
+        resetImage();
+
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                red = 255 - getRed(x, y, imageData);
+                green = 255 - getGreen(x, y, imageData);
+                blue = 255 - getBlue(x, y, imageData);
+
+                setPixel(imageData, x, y, red, green, blue, TRANSPARENCY);
+            }
+        }
+
+        CTX_COPY.putImageData(imageData, 0, 0);
+        selectedTool.innerHTML = 'Negativo'
+    }
+
+    function binarization() {
+        resetImage();
+
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                red = getRed(x, y, imageData);
+                green = getGreen(x, y, imageData);
+                blue = getBlue(x, y, imageData);
+
+                let temp;
+
+                if ((red + green + blue) < (255 / 2)) {
+                    temp = 0;
+                } else {
+                    temp = 255;
+                }
 
 
+                setPixel(imageData, x, y, temp, temp, temp, TRANSPARENCY);
+            }
+        }
 
+        CTX_COPY.putImageData(imageData, 0, 0);
+        selectedTool.innerHTML = 'Binarizacion'
+    }
+
+    function brightness() {
+        var r = 0;
+        var g = 0;
+        var b = 0;
+        const brillo = 30;
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                r = getRed(x, y, imageData) + brillo;
+                g = getGreen(x, y, imageData) + brillo;
+                b = getBlue(x, y, imageData) + brillo;
+                setPixel(imageData, x, y, r, g, b, TRANSPARENCY);
+            }
+        }
+        selectedTool.innerHTML = 'Brillo'
+
+        CTX_COPY.putImageData(imageData, 0, 0);
+        console.log('brillo');
+    }
+
+    function blur() {
+        resetImage();
+
+        const FILTER = 1 / 9;
+
+        for (let x = 0; x < image.width - 1; x++) {
+            for (let y = 0; y < image.height - 1; y++) {
+                const pixel_1_1 = getPixel(imageData, x - 1, y - 1);
+                const pixel_1_2 = getPixel(imageData, x - 1, y);
+                const pixel_1_3 = getPixel(imageData, x - 1, y + 1);
+                const pixel_2_1 = getPixel(imageData, x, y - 1);
+                const pixel_2_2 = getPixel(imageData, x, y);
+                const pixel_2_3 = getPixel(imageData, x, y + 1);
+                const pixel_3_1 = getPixel(imageData, x + 1, y - 1);
+                const pixel_3_2 = getPixel(imageData, x + 1, y);
+                const pixel_3_3 = getPixel(imageData, x + 1, y + 1);
+
+                const r = Math.floor((pixel_1_1[0] * FILTER) + (pixel_1_2[0] * FILTER) + (pixel_1_3[0] * FILTER) + (pixel_2_1[0] * FILTER) + (pixel_2_2[0] * FILTER) + (pixel_2_3[0] * FILTER) + (pixel_3_1[0] * FILTER) + (pixel_3_2[0] * FILTER) + (pixel_3_3[0] * FILTER));
+
+                const g = Math.floor((pixel_1_1[1] * FILTER) + (pixel_1_2[1] * FILTER) + (pixel_1_3[1] * FILTER) + (pixel_2_1[1] * FILTER) + (pixel_2_2[1] * FILTER) + (pixel_2_3[1] * FILTER) + (pixel_3_1[1] * FILTER) + (pixel_3_2[1] * FILTER) + (pixel_3_3[1] * FILTER));
+
+                const b = Math.floor((pixel_1_1[2] * FILTER) + (pixel_1_2[2] * FILTER) + (pixel_1_3[2] * FILTER) + (pixel_2_1[2] * FILTER) + (pixel_2_2[2] * FILTER) + (pixel_2_3[2] * FILTER) + (pixel_3_1[2] * FILTER) + (pixel_3_2[2] * FILTER) + (pixel_3_3[2] * FILTER));
+
+                setPixel(imageData, x, y, r, g, b, TRANSPARENCY);
+            }
+        }
+        CTX_COPY.putImageData(imageData, 0, 0);
+
+        selectedTool.innerHTML = 'Desenfoque';
+    }
+
+    function getPixel(imageData, x, y) {
+        let index = (x + y * imageData.width) * 4;
+        let r = imageData.data[index + 0];
+        let g = imageData.data[index + 1];
+        let b = imageData.data[index + 2];
+        let a = TRANSPARENCY;
+        return [r, g, b, a];
+    }
 
 
 }
