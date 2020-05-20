@@ -33,6 +33,7 @@ window.onload = function() {
     document.querySelector('#filterSepia').addEventListener('click', sepia);
     document.querySelector('#filterNegative').addEventListener('click', negative);
     document.querySelector('#filterBlur').addEventListener('click', blur);
+    document.querySelector('#filterSaturation').addEventListener('click', saturation);
     document.querySelector('#brillo').addEventListener('click', brightness);
     //  new canvas && upload image
     document.querySelector('#newCanvas').addEventListener('click', newCanvas);
@@ -285,7 +286,7 @@ window.onload = function() {
     }
 
     function blur() {
-        resetImage();
+        //resetImage();
 
         const FILTER = 1 / 9;
 
@@ -323,6 +324,111 @@ window.onload = function() {
         let a = TRANSPARENCY;
         return [r, g, b, a];
     }
+
+    function saturation() {
+        resetImage();
+
+        var r = 0;
+        var g = 0;
+        var b = 0;
+        const brillo = 30;
+        let pixel;
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                r = getRed(x, y, imageData) + brillo;
+                g = getGreen(x, y, imageData) + brillo;
+                b = getBlue(x, y, imageData) + brillo;
+                //Convertir image de RGB a HSV (Hue,Saturation,Value)
+                pixel = rgbToHsv(r, g, b);
+                //Convertir image de HSV a RGB (aumentando el valor de la Saturacion)
+                pixel = hsvToRgb(pixel.h, 1, pixel.v);
+
+                setPixel(imageData, x, y, pixel.r, pixel.g, pixel.b, TRANSPARENCY);
+            }
+        }
+        selectedTool.innerHTML = 'Saturacion'
+
+        CTX_COPY.putImageData(imageData, 0, 0);
+        console.log('saturacion');
+    }
+
+    function rgbToHsv(r, g, b) {
+
+        var h;
+        var s;
+        var v;
+
+        var maxColor = Math.max(r, g, b);
+        var minColor = Math.min(r, g, b);
+        var delta = maxColor - minColor;
+
+        // Calculate hue
+        // To simplify the formula, we use 0-6 range.
+        if (delta == 0) {
+            h = 0;
+        } else if (r == maxColor) {
+            h = (6 + (g - b) / delta) % 6;
+        } else if (g == maxColor) {
+            h = 2 + (b - r) / delta;
+        } else if (b == maxColor) {
+            h = 4 + (r - g) / delta;
+        } else {
+            h = 0;
+        }
+        // Then adjust the range to be 0-1
+        h = h / 6;
+
+        // Calculate saturation
+        if (maxColor != 0) {
+            s = delta / maxColor;
+        } else {
+            s = 0;
+        }
+
+        // Calculate value
+        v = maxColor / 255;
+
+        return { h: h, s: s, v: v };
+    };
+
+    function hsvToRgb(h, s, v) {
+        var r, g, b, i, f, p, q, t;
+        if (arguments.length === 1) {
+            s = h.s, v = h.v, h = h.h;
+        }
+        i = Math.floor(h * 6);
+        f = h * 6 - i;
+        p = v * (1 - s);
+        q = v * (1 - f * s);
+        t = v * (1 - (1 - f) * s);
+        switch (i % 6) {
+            case 0:
+                r = v, g = t, b = p;
+                break;
+            case 1:
+                r = q, g = v, b = p;
+                break;
+            case 2:
+                r = p, g = v, b = t;
+                break;
+            case 3:
+                r = p, g = q, b = v;
+                break;
+            case 4:
+                r = t, g = p, b = v;
+                break;
+            case 5:
+                r = v, g = p, b = q;
+                break;
+        }
+        return {
+            r: Math.round(r * 255),
+            g: Math.round(g * 255),
+            b: Math.round(b * 255)
+        };
+    }
+
+
 
 
 }
