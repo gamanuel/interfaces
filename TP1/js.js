@@ -33,6 +33,7 @@ window.onload = function() {
     document.querySelector('#filterSepia').addEventListener('click', sepia);
     document.querySelector('#filterNegative').addEventListener('click', negative);
     document.querySelector('#filterBlur').addEventListener('click', blur);
+    document.querySelector('#filterEdge').addEventListener('click', edge);
     document.querySelector('#filterSaturation').addEventListener('click', saturation);
     document.querySelector('#brillo').addEventListener('click', brightness);
     //  new canvas && upload image
@@ -182,8 +183,11 @@ window.onload = function() {
             image.src = reader.result;
             console.log(reader.result);
             image.onload = function() {
-                CTX.drawImage(image, 0, 0);
-                CTX_COPY.drawImage(image, 0, 0);
+                var scale = Math.min(CANVAS_COPY.width / image.width, CANVAS_COPY.height / image.height);
+                var x = (CANVAS_COPY.width / 2) - (image.width / 2) * scale;
+                var y = (CANVAS_COPY.height / 2) - (image.height / 2) * scale;
+                CTX.drawImage(image, x, y, image.width * scale, image.height * scale);
+                CTX_COPY.drawImage(image, x, y, image.width * scale, image.height * scale);
                 imageData = CTX.getImageData(0, 0, image.width, image.height);
                 CTX.putImageData(imageData, 0, 0);
                 resetImage();
@@ -300,43 +304,47 @@ window.onload = function() {
     }
 
     function blur() {
-        //resetImage();
+        resetImage();
 
-        const FILTER = 1 / 9;
+        const FILTER = [
+            [1 / 9, 1 / 9, 1 / 9],
+            [1 / 9, 1 / 9, 1 / 9],
+            [1 / 9, 1 / 9, 1 / 9]
+        ];
 
-        for (let x = 0; x < image.width - 1; x++) {
-            for (let y = 0; y < image.height - 1; y++) {
-                const pixel_1_1 = getPixel(imageData, x - 1, y - 1);
-                const pixel_1_2 = getPixel(imageData, x - 1, y);
-                const pixel_1_3 = getPixel(imageData, x - 1, y + 1);
-                const pixel_2_1 = getPixel(imageData, x, y - 1);
-                const pixel_2_2 = getPixel(imageData, x, y);
-                const pixel_2_3 = getPixel(imageData, x, y + 1);
-                const pixel_3_1 = getPixel(imageData, x + 1, y - 1);
-                const pixel_3_2 = getPixel(imageData, x + 1, y);
-                const pixel_3_3 = getPixel(imageData, x + 1, y + 1);
+        buildMatrix(FILTER);
 
-                const r = Math.floor((pixel_1_1[0] * FILTER) + (pixel_1_2[0] * FILTER) + (pixel_1_3[0] * FILTER) + (pixel_2_1[0] * FILTER) + (pixel_2_2[0] * FILTER) + (pixel_2_3[0] * FILTER) + (pixel_3_1[0] * FILTER) + (pixel_3_2[0] * FILTER) + (pixel_3_3[0] * FILTER));
+        selectedTool.innerHTML = 'Desenfoque';
+    }
 
-                const g = Math.floor((pixel_1_1[1] * FILTER) + (pixel_1_2[1] * FILTER) + (pixel_1_3[1] * FILTER) + (pixel_2_1[1] * FILTER) + (pixel_2_2[1] * FILTER) + (pixel_2_3[1] * FILTER) + (pixel_3_1[1] * FILTER) + (pixel_3_2[1] * FILTER) + (pixel_3_3[1] * FILTER));
+    function edge() {
+        resetImage();
+        black_white();
+        const FILTER = [
+            [-1, -1, -1],
+            [-1, 8, -1],
+            [-1, -1, -1]
+        ];
 
-                const b = Math.floor((pixel_1_1[2] * FILTER) + (pixel_1_2[2] * FILTER) + (pixel_1_3[2] * FILTER) + (pixel_2_1[2] * FILTER) + (pixel_2_2[2] * FILTER) + (pixel_2_3[2] * FILTER) + (pixel_3_1[2] * FILTER) + (pixel_3_2[2] * FILTER) + (pixel_3_3[2] * FILTER));
+        buildMatrix(FILTER);
+
+        selectedTool.innerHTML = 'Bordes';
+    }
+
+    function buildMatrix(FILTER) {
+        for (let x = 0; x < image.width; x++) {
+            for (let y = 0; y < image.height; y++) {
+                const r = Math.floor((getRed(x - 1, y - 1, imageData) * FILTER[0][0]) + (getRed(x - 1, y, imageData) * FILTER[1][0]) + (getRed(x - 1, y + 1, imageData) * FILTER[2][0]) + (getRed(x, y - 1, imageData) * FILTER[0][1]) + (getRed(x, y, imageData) * FILTER[1][1]) + (getRed(x, y + 1, imageData) * FILTER[2][1]) + (getRed(x + 1, y - 1, imageData) * FILTER[0][2]) + (getRed(x + 1, y, imageData) * FILTER[1][2]) + (getRed(x + 1, y + 1, imageData) * FILTER[2][2]));
+
+                const g = Math.floor((getGreen(x - 1, y - 1, imageData) * FILTER[0][0]) + (getGreen(x - 1, y, imageData) * FILTER[1][0]) + (getGreen(x - 1, y + 1, imageData) * FILTER[2][0]) + (getGreen(x, y - 1, imageData) * FILTER[0][1]) + (getGreen(x, y, imageData) * FILTER[1][1]) + (getGreen(x, y + 1, imageData) * FILTER[2][1]) + (getGreen(x + 1, y - 1, imageData) * FILTER[0][2]) + (getGreen(x + 1, y, imageData) * FILTER[1][2]) + (getGreen(x + 1, y + 1, imageData) * FILTER[2][2]));
+
+                const b = Math.floor((getBlue(x - 1, y - 1, imageData) * FILTER[0][0]) + (getBlue(x - 1, y, imageData) * FILTER[1][0]) + (getBlue(x - 1, y + 1, imageData) * FILTER[2][0]) + (getBlue(x, y - 1, imageData) * FILTER[0][1]) + (getBlue(x, y, imageData) * FILTER[1][1]) + (getBlue(x, y + 1, imageData) * FILTER[2][1]) + (getBlue(x + 1, y - 1, imageData) * FILTER[0][2]) + (getBlue(x + 1, y, imageData) * FILTER[1][2]) + (getBlue(x + 1, y + 1, imageData) * FILTER[2][2]));
 
                 setPixel(imageData, x, y, r, g, b, TRANSPARENCY);
             }
         }
         CTX_COPY.putImageData(imageData, 0, 0);
-
-        selectedTool.innerHTML = 'Desenfoque';
-    }
-
-    function getPixel(imageData, x, y) {
-        let index = (x + y * imageData.width) * 4;
-        let r = imageData.data[index + 0];
-        let g = imageData.data[index + 1];
-        let b = imageData.data[index + 2];
-        let a = TRANSPARENCY;
-        return [r, g, b, a];
+        return;
     }
 
     function saturation() {
@@ -376,8 +384,6 @@ window.onload = function() {
         var minColor = Math.min(r, g, b);
         var delta = maxColor - minColor;
 
-        // Calculate hue
-        // To simplify the formula, we use 0-6 range.
         if (delta == 0) {
             h = 0;
         } else if (r == maxColor) {
@@ -389,17 +395,14 @@ window.onload = function() {
         } else {
             h = 0;
         }
-        // Then adjust the range to be 0-1
         h = h / 6;
 
-        // Calculate saturation
         if (maxColor != 0) {
             s = delta / maxColor;
         } else {
             s = 0;
         }
 
-        // Calculate value
         v = maxColor / 255;
 
         return { h: h, s: s, v: v };
@@ -441,6 +444,7 @@ window.onload = function() {
             b: Math.round(b * 255)
         };
     }
+
 
 
 
