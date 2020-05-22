@@ -62,38 +62,12 @@ window.onload = function() {
         }
     });
 
-    document.querySelector('#activeBrush').addEventListener('click', r => {
-        CTX_COPY.beginPath();
-        CTX_COPY.closePath();
-        CTX_COPY.stroke();
-        brush = !brush;
-        color = 'rgb(0, 0, 0)';
-        if (rubber) {
-            rubber = false;
-        }
-        if (brush) {
-            selectedTool.innerHTML = 'Lapiz'
-            CANVAS_COPY.style.cursor = "crosshair";
-        } else {
-            CANVAS_COPY.style.cursor = "default";
-        }
-    });
+    document.querySelector('#activeBrush').addEventListener('click', brushMethod);
 
-    document.querySelector('#activeRubber').addEventListener('click', r => {
-        CTX_COPY.beginPath();
-        CTX_COPY.closePath();
-        CTX_COPY.stroke();
-        rubber = !rubber;
-        color = 'rgb(255, 255, 255)';
-        if (brush) {
-            brush = false;
-        }
-        if (rubber) {
-            selectedTool.innerHTML = 'Goma de borrar'
-            CANVAS_COPY.style.cursor = "crosshair";
-        } else {
-            CANVAS_COPY.style.cursor = "default";
-        }
+    document.querySelector('#activeRubber').addEventListener('click', rubberMethod);
+
+    CANVAS_COPY.addEventListener("mouseleave", function(event) {
+        mouse = false;
     });
 
     function newCanvas() {
@@ -108,7 +82,47 @@ window.onload = function() {
         });
     }
 
+    function brushMethod() {
+        CTX_COPY.beginPath();
+        CTX_COPY.closePath();
+        CTX_COPY.stroke();
+        brush = !brush;
+        color = 'rgb(0, 0, 0)';
+        if (rubber) {
+            rubber = false;
+        }
+        if (brush) {
+            selectedTool.innerHTML = 'Lapiz'
+            CANVAS_COPY.style.cursor = "crosshair";
+        } else {
+            CANVAS_COPY.style.cursor = "default";
+        }
+    }
+
+    function rubberMethod() {
+        CTX_COPY.beginPath();
+        CTX_COPY.closePath();
+        CTX_COPY.stroke();
+        rubber = !rubber;
+        color = 'rgb(255, 255, 255)';
+        if (brush) {
+            brush = false;
+        }
+        if (rubber) {
+            selectedTool.innerHTML = 'Goma de borrar'
+            CANVAS_COPY.style.cursor = "crosshair";
+        } else {
+            CANVAS_COPY.style.cursor = "default";
+        }
+    }
+
     function resetImage() {
+        if (brush) {
+            brushMethod();
+        }
+        if (rubber) {
+            rubberMethod();
+        }
         imageData = CTX.getImageData(0, 0, image.width, image.height);
         CTX_COPY.putImageData(imageData, 0, 0);
     }
