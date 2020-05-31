@@ -17,7 +17,7 @@ document.querySelector('#btnNewGame').addEventListener('click', r => {
 
 function initCanvas() {
     let image = new Image();
-    image.src = "background.webp";
+    image.src = "./img/background.webp";
     image.onload = function() {
         let scale = Math.max(CANVAS.width / image.width, CANVAS.height / image.height);
         let x = (CANVAS.width / 2) - (image.width / 2) * scale;
