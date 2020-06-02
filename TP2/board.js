@@ -57,7 +57,6 @@ class Board {
         for (let i = 0; i < this.board.length; i++) {
             for (let j = 0; j < this.board[0].length - 3; j++) {
                 if ((this.board[i][j].player == this.turn) && (this.board[i][j + 1].player == this.turn) && (this.board[i][j + 2].player == this.turn) && (this.board[i][j + 3].player == this.turn)) {
-                    alert('Gano ' + this.turn);
                     return true;
                 }
             }
@@ -68,7 +67,6 @@ class Board {
         for (let i = 0; i < this.board.length - 3; i++) {
             for (let j = 0; j < this.board[0].length; j++) {
                 if ((this.board[i][j].player == this.turn) && (this.board[i + 1][j].player == this.turn) && (this.board[i + 2][j].player == this.turn) && (this.board[i + 3][j].player == this.turn)) {
-                    alert('Gano ' + this.turn);
                     return true;
                 }
             }
@@ -79,7 +77,6 @@ class Board {
         for (let i = 3; i < this.board.length; i++) {
             for (let j = 0; j < this.board[0].length - 3; j++) {
                 if ((this.board[i][j].player == this.turn) && (this.board[i - 1][j + 1].player == this.turn) && (this.board[i - 2][j + 2].player == this.turn) && (this.board[i - 3][j + 3].player == this.turn)) {
-                    alert('Gano ' + this.turn);
                     return true;
                 }
             }
@@ -88,7 +85,6 @@ class Board {
         for (let i = 3; i < this.board.length; i++) {
             for (let j = 3; j < this.board[0].length; j++) {
                 if ((this.board[i][j].player == this.turn) && (this.board[i - 1][j - 1].player == this.turn) && (this.board[i - 2][j - 2].player == this.turn) && (this.board[i - 3][j - 3].player == this.turn)) {
-                    alert('Gano ' + this.turn);
                     return true;
                 }
 

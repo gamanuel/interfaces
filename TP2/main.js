@@ -1,15 +1,24 @@
 'use strict';
 
+let widthScreen = screen.width * .8;
+let heightScreen = screen.height * .8;
+
 const CANVAS = document.querySelector('#canvas');
+CANVAS.width = widthScreen;
+CANVAS.height = heightScreen;
 const CTX = CANVAS.getContext('2d');
 let board;
 let imgData;
 initCanvas();
 
-
-
-
 document.querySelector('#btnNewGame').addEventListener('click', r => {
+    board.newGame();
+    drawPlayerChips();
+    redraw();
+});
+
+document.querySelector('#newGameWin').addEventListener('click', r => {
+    $('#modalWinner').modal('hide');
     board.newGame();
     drawPlayerChips();
     redraw();
@@ -125,8 +134,9 @@ function checkBoardChip() {
                         board.board[i][e].img = board.chips[board.draggingId].img;
                         board.chips.splice(board.draggingId, 1);
                         if (board.checkWin()) {
-                            board.newGame();
-                            drawPlayerChips();
+
+                            $('#modalWinner').modal('show');
+                            document.querySelector('#winner').innerHTML = 'Has ganado: ' + board.turn;
                         } else {
                             board.changeTurn();
                         }
