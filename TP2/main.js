@@ -1,11 +1,6 @@
 'use strict';
 
-let widthScreen = screen.width * .8;
-let heightScreen = screen.height * .8;
-
 const CANVAS = document.querySelector('#canvas');
-CANVAS.width = widthScreen;
-CANVAS.height = heightScreen;
 const CTX = CANVAS.getContext('2d');
 let board;
 let imgData;
