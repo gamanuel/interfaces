@@ -1,0 +1,145 @@
+/* KEYFRAME */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    /* align-self: center; */
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/parallax/10_Sky.png');
+    background-size: cover;
+}
+
+
+/* START BACKGROUNDS */
+
+.background {
+    position: relative;
+    width: 100vw;
+}
+
+.bg_01 {
+    height: 100vh;
+    background: url("../img/parallax/01_Mist.png") repeat-x;
+    animation: background-animation 5s linear infinite;
+    opacity: 0.6;
+    background-size: contain;
+    z-index: 1;
+}
+
+.bg_02 {
+    background: url("../img/parallax/02_Bushes.png") repeat-x;
+    animation: background-animation 10s linear infinite;
+    background-size: contain;
+}
+
+.bg_03 {
+    background: url("../img/parallax/03_Particles.png") repeat-x;
+    animation: background-animation 20s linear infinite;
+    background-size: contain;
+}
+
+.bg_04 {
+    background: url("../img/parallax/04_Forest.png") repeat-x;
+    animation: background-animation 30s linear infinite;
+    background-size: contain;
+}
+
+.bg_05 {
+    background: url("../img/parallax/05_Particles.png") repeat-x;
+    animation: background-animation 40s linear infinite;
+    background-size: contain;
+}
+
+.bg_06 {
+    background: url("../img/parallax/06_Forest.png") repeat-x;
+    animation: background-animation 50s linear infinite;
+    background-size: contain;
+}
+
+.bg_07 {
+    background: url("../img/parallax/07_Forest.png") repeat-x;
+    animation: background-animation 60s linear infinite;
+    background-size: contain;
+}
+
+.bg_08 {
+    background: url("../img/parallax/08_Forest.png") repeat-x;
+    animation: background-animation 70s linear infinite;
+    background-size: contain;
+}
+
+.bg_09 {
+    background: url("../img/parallax/09_Forest.png") repeat-x;
+    animation: background-animation 80s linear infinite;
+    background-size: contain;
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 1920px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+
+/* END BACKGROUNDS */
+
+.obstacle_01 {
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 210px;
+    width: 100px;
+}
+
+.obstacle_02 {
+    top: 0;
+    left: 2%;
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: rotate(180deg);
+    height: 250px;
+    width: 150px;
+}
+
+.keyframe {
+    top: 250px;
+    position: absolute;
+    width: 170px;
+    height: 135x;
+    left: 10%;
+}
+
+.player {
+    top: 100%;
+    width: 170px;
+    height: 135px;
+    background: url('../img/walk.png') left center;
+    animation: play .8s steps(4) infinite;
+}
+
+
+/* .spiderman:hover {
+background: url('img/fly.png') left center;
+} */
+
+@keyframes play {
+    100% {
+        background-position: -735px;
+    }
+}
+
+
+/* div.keyframe:hover {
+    -webkit-transform: translate(0, -400px);
+} */
