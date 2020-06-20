@@ -34,8 +34,4 @@ class Obstacle {
         this.higher.style.left = this.left + 'px';
         this.lower.style.left = this.left + 'px';
     }
-
-    restart() {
-        this.left = this.originalLeft;
-    }
 }

@@ -225,7 +225,7 @@
     right: 0%;
     position: absolute;
     cursor: pointer;
-    z-index: 2;
+    z-index: 0;
     padding-right: 5%;
 }
 
