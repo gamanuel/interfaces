@@ -3,6 +3,11 @@
 
 document.addEventListener("DOMContentLoaded", e => {
     let game = new Game();
-    game.initGame();
+
+    const btnStart = document.querySelector('#btnStart');
+
+    btnStart.addEventListener('click', r => {
+        game.initGame();
+    })
 
 });

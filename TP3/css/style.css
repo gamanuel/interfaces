@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -28,14 +28,14 @@
     height: 100vh;
     background: url("../img/parallax/01_Mist.png") repeat-x;
     animation: background-animation 5s linear infinite;
-    opacity: 0.6;
+    opacity: 0.8;
     background-size: contain;
     z-index: 1;
 }
 
 .bg_02 {
     background: url("../img/parallax/02_Bushes.png") repeat-x;
-    animation: background-animation 10s linear infinite;
+    animation: background-animation 9s linear infinite;
     background-size: contain;
 }
 
@@ -95,51 +95,156 @@
 
 .obstacle_01 {
     background: url('../img/obstacle/obstacle.png') no-repeat;
-    background-size: cover;
     position: absolute;
-    height: 210px;
-    width: 100px;
+    bottom: 0;
 }
 
 .obstacle_02 {
-    top: 0;
-    left: 2%;
     background: url('../img/obstacle/obstacle.png') no-repeat;
-    background-size: cover;
     position: absolute;
     transform: rotate(180deg);
-    height: 250px;
-    width: 150px;
+    top: 0;
 }
 
-.keyframe {
+.obstacle_03 {
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.obstacle_04 {
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0;
+}
+
+.obstacle_05 {
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.obstacle_06 {
+    background: url('../img/obstacle/obstacle.png') no-repeat;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0;
+}
+
+.coin-container {
     top: 250px;
     position: absolute;
-    width: 170px;
-    height: 135x;
-    left: 10%;
+    width: 50px;
+    height: 60px;
+    display: none;
+}
+
+.coin_01 {
+    top: 100%;
+    width: 50px;
+    height: 60px;
+    background: url('../img/coin.png') left center;
+    animation: coin .8s steps(8) infinite;
+}
+
+@keyframes coin {
+    100% {
+        background-position: -438px;
+    }
+}
+
+#playerDivContainer {
+    top: 250px;
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 100px;
 }
 
 .player {
     top: 100%;
-    width: 170px;
-    height: 135px;
-    background: url('../img/walk.png') left center;
+    width: 100px;
+    height: 100px;
+    background: url('../img/walk1.png') left center;
     animation: play .8s steps(4) infinite;
 }
 
-
-/* .spiderman:hover {
-background: url('img/fly.png') left center;
-} */
+.playerUp {
+    top: 100%;
+    width: 100px;
+    height: 100px;
+    background: url('../img/walk1.png') left center;
+    animation: play .6s steps(4) infinite;
+}
 
 @keyframes play {
     100% {
-        background-position: -735px;
+        background-position: -400px;
     }
 }
 
+.menu-container {
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    animation: breathing 3s linear infinite;
+    cursor: pointer;
+    z-index: 2;
+}
 
-/* div.keyframe:hover {
-    -webkit-transform: translate(0, -400px);
-} */
+.start {
+    width: 100%;
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.score-container {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    padding-right: 5%;
+}
+
+.score {
+    width: 140%;
+}
+
+.scoreInfo {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.explosion {
+    top: 100%;
+    width: 100px;
+    height: 100px;
+    background: url('../img/explosion.png') left center;
+    animation: play .8s steps(4) infinite;
+}

@@ -11,6 +11,8 @@
 <body>
 
     <div class="container">
+
+
         <!-- Background -->
         <div class="background bg_09">
             <div class="background bg_08">
@@ -32,8 +34,20 @@
         </div>
 
         <!-- Player -->
-        <div class="keyframe" id="playerDivContainer">
+        <div id="playerDivContainer">
             <div class="player"></div>
+        </div>
+
+
+        <!-- Game Menu -->
+        <div class="menu-container" id="menuDiv">
+            <img class="start" id="btnStart" src="img/game-menu/newGame.png" alt="">
+        </div>
+
+        <!-- Score -->
+        <div class="score-container">
+            <img class="score" src="img/game-menu/score.png" alt="">
+            <h1 class="scoreInfo" id="scoreInfo">0</h1>
         </div>
 
         <!-- Obstacle -->
@@ -41,12 +55,29 @@
         </div>
         <div class="obstacle_02">
         </div>
+        <div class="obstacle_03">
+        </div>
+        <div class="obstacle_04">
+        </div>
+        <div class="obstacle_05">
+        </div>
+        <div class="obstacle_06">
+        </div>
+
+        <!-- Coin -->
+        <div class="coin-container">
+            <div class="coin_01"></div>
+        </div>
+
+
     </div>
 
 
 </body>
 
 <script src="js/player.js"></script>
+<script src="js/reward.js"></script>
+<script src="js/obstacle.js"></script>
 <script src="js/game.js"></script>
 <script src="js/main.js"></script>
 

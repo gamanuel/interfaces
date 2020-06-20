@@ -1,34 +1,67 @@
 class Game {
 
     constructor() {
-        this.container = document.querySelector('#playerDivContainer');
-        this.body = document.querySelector('body');
-        this.bodyHeight = window.getComputedStyle(this.body, null).getPropertyValue("height");
-        this.BODYHEIGHT = parseInt(this.bodyHeight.split('px')[0]);
-        this.height = window.getComputedStyle(this.container, null).getPropertyValue("height");
-        this.diferencia = this.BODYHEIGHT - parseInt(this.height.split('px')[0]);
+
+
+        //Game assets
         this.player = new Player();
+        this.coin = null;
         this.obstacles = [];
         this.score;
         this.goUp = false;
         this.interval;
+        this.obstacles;
+
+        //Aditional data
+        this.body = document.querySelector('body');
+        this.bodyHeight = window.getComputedStyle(this.body, null).getPropertyValue('height');
+        this.bodyHeightClean = parseInt(this.bodyHeight.split('px')[0]);
+        this.height = window.getComputedStyle(this.player.playerDiv, null).getPropertyValue('height');
+        this.rest = this.bodyHeightClean - parseInt(this.height.split('px')[0]);
+
+
+        //Menu elements
+        this.menuDiv = document.querySelector('#menuDiv');
+        this.scoreDiv = document.querySelector('#scoreInfo');
+
+        this.audio = new Audio('sounds/forest.mp3');
 
     }
 
     initGame() {
+        //Game sound
+        this.audio.play();
+
+        //Game data
+        this.menuDiv.style.display = 'none';
         this.score = 0;
 
+        //PLayer and Obstacle data
         this.player.setPosition();
-        /*   for (let i = 0; i < 5; i++) {
-              this.obstacles.push(new Obstacle());
-          }
-          */
-        document.querySelector('body').addEventListener('keyup', e => {
+
+        let higherObstacle;
+        let lowerObstacle;
+
+        higherObstacle = document.querySelector('.obstacle_02');
+        lowerObstacle = document.querySelector('.obstacle_01');
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 320, 90));
+        higherObstacle = document.querySelector('.obstacle_04');
+        lowerObstacle = document.querySelector('.obstacle_03');
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 100, 220));
+        higherObstacle = document.querySelector('.obstacle_06');
+        lowerObstacle = document.querySelector('.obstacle_05');
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 60, 340));
+
+        this.coin = new Reward(document.querySelector('.coin-container'), 20, 2000, this.bodyHeight);
+
+        //Key up event
+        this.body.addEventListener('keyup', e => {
             if (e.keyCode === 38) {
                 this.goUp = true;
             }
         });
 
+        //Loop (Game functionality)
         this.interval = setInterval(e => {
             this.loop();
         }, 40);
@@ -37,7 +70,7 @@ class Game {
 
     loop() {
 
-        let top = window.getComputedStyle(this.container, null).getPropertyValue("top");
+        let top = window.getComputedStyle(this.player.playerDiv, null).getPropertyValue("top");
         top = parseInt(top.split('px')[0]);
 
         if (this.goUp) {
@@ -50,47 +83,87 @@ class Game {
             }
         } else {
 
-            if ((top + 20) <= this.diferencia) {
-
-                this.player.setPosition(top + 3);
+            if ((top + 20) <= this.rest) {
+                this.player.goDown(top + 3);
             }
         }
-        this.updateScreen();
-
-        /*  for (let i = 0; i < this.obstacles.length; i++) {
-            this.obstacles[i].update();
-        }
-
-        if (this.checkColition(this.obstacles[n])) {
-            this.endGame();
-        } else {
-            this.score++;
-        }
 
         this.updateScreen();
-        */
+
+        if (this.checkColition()) {
+            this.player.die();
+            this.endGame('Perdiste');
+        }
+
+        if (this.score === 15) {
+            this.endGame('Ganaste!')
+        }
+
     }
 
-    checkColition(obstacle) {
-        //Ver si el pajaro choco;
+    checkColition() {
+
+        let playerLeft = this.player.playerDiv.offsetLeft;
+        let playerTop = this.player.playerDiv.offsetTop;
+        let playerHeight = this.player.playerDiv.offsetHeight;
+        let playerWidth = this.player.playerDiv.offsetWidth;
+
+        for (const obstacle of this.obstacles) {
+            if ((obstacle.left <= playerLeft + playerWidth) && (obstacle.left + obstacle.width >= playerLeft)) {
+                if ((obstacle.higherHeight >= playerTop) || ((playerTop + playerHeight) >= (this.bodyHeightClean - obstacle.bottomHeight))) {
+                    return true;
+                }
+            }
+
+            if ((obstacle.left + obstacle.width + 2 < playerLeft) && (obstacle.left + obstacle.width + 10 > playerLeft)) {
+                this.score++;
+                return false;
+            }
+        }
+
+        if (this.coin.left <= playerLeft + playerWidth) {
+            console.log(this.coin.element.offsetTop);
+            console.log(playerTop);
+            let coinTop = this.coin.element.offsetTop;
+            let coinHeight = this.coin.element.offsetHeight
+            if ((coinTop >= playerTop) && ((coinTop - coinHeight) <= playerTop)) {
+                console.log('llego');
+                this.score += 5;
+                const sound = new Audio('sounds/coin.wav')
+                sound.play();
+                this.coin.element.style.display = 'none';
+            }
+        }
+
+        return false;
+
     }
 
     updateScreen() {
 
-        //this.playerDiv.style.top = this.player.position;
         this.player.updateScreen();
-
-        /* for (let i = 0; i < this.obstacles.length; i++) {
-            this.obstacles[i].updateScreen();
-            //this.obstacles[i].obstacleDiv.style.left = this.obstacles[i].position;
+        this.coin.updateScreen();
+        for (const obstacle of this.obstacles) {
+            obstacle.updateScreen();
         }
 
-        this.scoreDiv.innerHTML = this.score; */
+        this.scoreDiv.innerHTML = this.score;
 
     }
 
-    endGame() {
-        this.interval.clearInterval();
+    endGame(message) {
+        clearInterval(this.interval);
+        this.menuDiv.style.display = 'block';
+        this.obstacles = [];
+        this.goUp = false;
+        setTimeout(e => {
+            alert(message + ': ' + this.score);
+            this.score = 0;
+        }, 1000);
+
+        this.audio.stop();
+
+        this.updateScreen();
     }
 
 }
