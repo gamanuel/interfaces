@@ -23,17 +23,20 @@ class Game {
         //Menu elements
         this.menuDiv = document.querySelector('#menuDiv');
         this.scoreDiv = document.querySelector('#scoreInfo');
+        this.rulesDiv = document.querySelector('#rulesDiv');
 
-        this.audio = new Audio('sounds/forest.mp3');
+        this.audio;
 
     }
 
     initGame() {
         //Game sound
+        this.audio = new Audio('sounds/forest.mp3');
         this.audio.play();
 
         //Game data
         this.menuDiv.style.display = 'none';
+        this.rulesDiv.style.display = 'none';
         this.score = 0;
 
         //PLayer and Obstacle data
@@ -110,7 +113,7 @@ class Game {
 
         for (const obstacle of this.obstacles) {
             if ((obstacle.left <= playerLeft + playerWidth) && (obstacle.left + obstacle.width >= playerLeft)) {
-                if ((obstacle.higherHeight >= playerTop) || ((playerTop + playerHeight) >= (this.bodyHeightClean - obstacle.bottomHeight))) {
+                if ((obstacle.higherHeight >= playerTop) || ((playerTop + playerHeight) >= (this.bodyHeightClean - obstacle.lowerHeight))) {
                     return true;
                 }
             }
@@ -153,7 +156,9 @@ class Game {
 
     endGame(message) {
         clearInterval(this.interval);
+        this.audio.pause();
         this.menuDiv.style.display = 'block';
+        this.rulesDiv.style.display = 'block';
         this.obstacles = [];
         this.goUp = false;
         setTimeout(e => {
@@ -161,7 +166,6 @@ class Game {
             this.score = 0;
         }, 1000);
 
-        this.audio.stop();
 
         this.updateScreen();
     }

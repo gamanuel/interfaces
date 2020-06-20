@@ -248,3 +248,10 @@
     background: url('../img/explosion.png') left center;
     animation: play .8s steps(4) infinite;
 }
+
+.rules-container {
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: 1;
+}
