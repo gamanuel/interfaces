@@ -5,12 +5,12 @@ class Reward {
     constructor(element) {
         this.element = element;
         this.element.style.display = 'block';
-        this.left = left;
+        this.left = Math.floor(Math.random() * 2000) + 600;
         this.setStyle();
     }
 
     setStyle() {
-        this.element.style.left = Math.floor(Math.random() * 2000) + 600 + 'px';
+        this.element.style.left = this.left + 'px';
     }
 
     updateScreen() {
