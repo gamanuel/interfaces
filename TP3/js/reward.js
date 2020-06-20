@@ -2,7 +2,7 @@
 
 class Reward {
 
-    constructor(element, top, left, bodyHeight) {
+    constructor(element) {
         this.element = element;
         this.element.style.display = 'block';
         this.left = left;

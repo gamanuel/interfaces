@@ -55,7 +55,7 @@ class Game {
         lowerObstacle = document.querySelector('.obstacle_05');
         this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 60, 340));
 
-        this.coin = new Reward(document.querySelector('.coin-container'), 20, 2000, this.bodyHeight);
+        this.coin = new Reward(document.querySelector('.coin-container'));
 
         //Key up event
         this.body.addEventListener('keyup', e => {
@@ -98,7 +98,7 @@ class Game {
             this.endGame('Perdiste');
         }
 
-        if (this.score === 15) {
+        if (this.score >= 15) {
             this.endGame('Ganaste!')
         }
 
