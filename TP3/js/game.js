@@ -47,13 +47,13 @@ class Game {
 
         higherObstacle = document.querySelector('.obstacle_02');
         lowerObstacle = document.querySelector('.obstacle_01');
-        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 320, 90));
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 320, 90, 1000));
         higherObstacle = document.querySelector('.obstacle_04');
         lowerObstacle = document.querySelector('.obstacle_03');
-        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 100, 220));
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 100, 220, 1600));
         higherObstacle = document.querySelector('.obstacle_06');
         lowerObstacle = document.querySelector('.obstacle_05');
-        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 60, 340));
+        this.obstacles.push(new Obstacle(higherObstacle, lowerObstacle, 60, 340, 2200));
 
         this.coin = new Reward(document.querySelector('.coin-container'));
 

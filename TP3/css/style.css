@@ -175,7 +175,7 @@
     width: 100px;
     height: 100px;
     background: url('../img/walk1.png') left center;
-    animation: play .6s steps(4) infinite;
+    animation: play .10s steps(4) infinite;
 }
 
 @keyframes play {
