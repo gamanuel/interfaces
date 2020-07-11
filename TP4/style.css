@@ -1,0 +1,13 @@
+.dammi-background {
+    background-color: #000000;
+}
+
+.margenTitulo {
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .margenTitulo {
+        margin-top: 40%;
+    }
+}
