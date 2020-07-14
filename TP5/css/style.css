@@ -1,0 +1,152 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.spofiyHover:hover {
+    transition: 1.0s;
+    color: #FCA311 !important;
+}
+
+
+/* FONT VARIATION */
+
+.fontLight {
+    font-weight: 300;
+}
+
+.fontRegular {
+    font-weight: 400;
+}
+
+.fontBold {
+    font-weight: 700;
+}
+
+.fontBlack {
+    font-weight: 900;
+}
+
+
+/* --------------- */
+
+.marginTop-10 {
+    margin-top: 10%;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+
+/* Yellow */
+
+.btn-yellow {
+    background-color: #FCA311;
+    color: black;
+}
+
+.btn-outline-yellow {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #FCA311;
+}
+
+.btn-outline-yellow:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+.bg-yellow {
+    background-color: #FCA311;
+}
+
+.color-yellow {
+    color: #FCA311;
+}
+
+.btn-yellow:hover {
+    background-color: #b9770c;
+    color: black;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.btn-black:hover {
+    color: #FCA311;
+}
+
+.btn-outline-black {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover {
+    background-color: black;
+    color: white;
+}
+
+.paddingNavbar {
+    padding-left: 10% !important;
+    padding-right: 9% !important;
+}
+
+
+/* Blue */
+
+.btn-blue {
+    background-color: #14213D;
+    color: white;
+}
+
+.bg-blue {
+    background-color: #14213D;
+}
+
+.color-blue {
+    color: #14213D;
+}
+
+.btn-blue:hover {
+    background-color: #0c1425;
+    color: white;
+}
+
+.home-primary-bg {
+    background-image: url('../images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.footerSpofiy {
+    background-color: black;
+    height: 100px !important;
+}
+
+.hoverDropdownMenu:hover {
+    background-color: #FCA311;
+    color: black !important;
+}
+
+.cardImage {
+    height: 210px;
+    object-fit: cover;
+}
+
+@media(max-width:500px) {
+    .titleHome {
+        margin-top: 20%;
+        font-size: 1.3em;
+    }
+    .cardImage {
+        height: 240px;
+    }
+    .paddingNavbar {
+        padding-left: 5% !important;
+        padding-right: 4% !important;
+    }
+}
