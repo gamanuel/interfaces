@@ -15,5 +15,9 @@ class homeView extends view {
         $this->smarty->display("templates/homeUser.tpl");
     }
 
-    //User Agent Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 R.Port 50776 R.Ad ::1 S.Ad ::1 Name localhost
+    public function getLibrary($id){
+        $this->smarty->assign('id',$id);
+        $this->smarty->display("templates/library.tpl");
+    }
+
 }

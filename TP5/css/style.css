@@ -26,6 +26,10 @@
     font-weight: 900;
 }
 
+.mt-6 {
+    margin-top: 60px;
+}
+
 
 /* --------------- */
 
@@ -35,6 +39,10 @@
 
 .bg-black {
     background-color: black;
+}
+
+.text-black {
+    color: black;
 }
 
 
@@ -137,6 +145,18 @@
     object-fit: cover;
 }
 
+.playerDesktop {
+    display: block;
+}
+
+.playerMobile {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 @media(max-width:500px) {
     .titleHome {
         margin-top: 20%;
@@ -148,5 +168,11 @@
     .paddingNavbar {
         padding-left: 5% !important;
         padding-right: 4% !important;
+    }
+    .playerDesktop {
+        display: none;
+    }
+    .playerMobile {
+        display: block;
     }
 }

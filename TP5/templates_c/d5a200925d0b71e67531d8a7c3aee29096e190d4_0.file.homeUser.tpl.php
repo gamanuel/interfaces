@@ -1,4 +1,30 @@
-{include file="headerUser.tpl"}
+<?php
+/* Smarty version 3.1.32, created on 2020-07-16 20:21:26
+  from 'C:\xampp\htdocs\interfaces\TP5\templates\homeUser.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32',
+  'unifunc' => 'content_5f10e0f6c23989_71612382',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd5a200925d0b71e67531d8a7c3aee29096e190d4' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\homeUser.tpl',
+      1 => 1594941678,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:headerUser.tpl' => 1,
+    'file:footer.tpl' => 1,
+  ),
+),false)) {
+function content_5f10e0f6c23989_71612382 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 <section class="mb-4">
     <div class="container">
@@ -172,9 +198,13 @@
 </div>
 
 
-{include file="footer.tpl"}
+<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
-<script src="js/homeUser.js"></script>
+<?php echo '<script'; ?>
+ src="js/homeUser.js"><?php echo '</script'; ?>
+>
 </body>
 
-</html>
+</html><?php }
+}

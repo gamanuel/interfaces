@@ -19,4 +19,20 @@ class homeController extends securedController {
   public function getHomeUser(){
     $this->homeView->getHomeUser();
   }
+
+  public function getLibrary($params = []){
+    $id = $params[':ID'];
+    $string;
+    if($id === 'playlists'){
+      $string = 'Tus ' . $id;
+    }
+    else if($id === 'favoritos'){
+      $string = 'Tus ' . $id;
+    }
+    else if($id === 'recomendaciones'){
+      $string = 'Nuestras ' . $id;
+    }
+
+    $this->homeView->getLibrary($string);
+  }
 }
