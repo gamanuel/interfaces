@@ -35,4 +35,8 @@ class homeController extends securedController {
 
     $this->homeView->getLibrary($string);
   }
+
+  public function getMediaInfo(){
+    $this->homeView->getMediaInfo();
+  }
 }

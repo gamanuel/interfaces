@@ -20,4 +20,8 @@ class homeView extends view {
         $this->smarty->display("templates/library.tpl");
     }
 
+    public function getMediaInfo(){
+        $this->smarty->display("templates/mediaInfo.tpl"); 
+    }
+
 }
