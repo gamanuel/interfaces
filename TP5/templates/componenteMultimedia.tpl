@@ -1,4 +1,4 @@
- <div class="row  bg-blue rounded text-white mt-2">
+ <div class="row  bg-blue rounded text-white mt-2 pointer mediaDetail">
     <div class="col-2 col-md-1  my-auto p-2">
         <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="" class="img-fluid " srcset="">
     </div>

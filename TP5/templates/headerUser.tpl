@@ -62,11 +62,11 @@
                 <div class="row">
                     <div class="col-8 col-md-8">
                         <div class="form-group mt-2 mb-2">
-                            <input type="text" placeholder="Que estas buscando?" class="form-control form-control-sm">
+                            <input type="text" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
                         </div>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-black"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
                         <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters"><i class="fas fa-filter" ></i></button>
@@ -103,3 +103,5 @@
 
 
     </div>
+
+    <script src="js/search.js"></script>

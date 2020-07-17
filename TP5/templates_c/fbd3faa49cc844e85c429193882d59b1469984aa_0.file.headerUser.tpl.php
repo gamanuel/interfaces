@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-14 15:11:28
+/* Smarty version 3.1.32, created on 2020-07-17 16:16:25
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f0df5508694c5_34167926',
+  'unifunc' => 'content_5f11f90995cd15_46344850',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1594684309,
+      1 => 1595013368,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0df5508694c5_34167926 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f11f90995cd15_46344850 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -86,11 +86,11 @@ function content_5f0df5508694c5_34167926 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="row">
                     <div class="col-8 col-md-8">
                         <div class="form-group mt-2 mb-2">
-                            <input type="text" placeholder="Que estas buscando?" class="form-control form-control-sm">
+                            <input type="text" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
                         </div>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-black"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
                         <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters"><i class="fas fa-filter" ></i></button>
@@ -126,5 +126,9 @@ function content_5f0df5508694c5_34167926 (Smarty_Internal_Template $_smarty_tpl)
 
 
 
-    </div><?php }
+    </div>
+
+    <?php echo '<script'; ?>
+ src="js/search.js"><?php echo '</script'; ?>
+><?php }
 }

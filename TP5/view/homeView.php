@@ -24,4 +24,10 @@ class homeView extends view {
         $this->smarty->display("templates/mediaInfo.tpl"); 
     }
 
+    public function getSearch($id){
+        $this->smarty->assign('id',$id);
+
+        $this->smarty->display("templates/search.tpl"); 
+    }
+
 }

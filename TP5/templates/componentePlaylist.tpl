@@ -2,7 +2,7 @@
             <div class="col-8 col-md-8 mt-2 mb-2">
                 <div class="row">
                     <div class=" col-md-12 ">
-                        <h5 class="fontBold">Titulo cancion
+                        <h5 class="fontBold">Titulo Playlist
                             <h5>
                     </div>
                     <div class="col-md-12">

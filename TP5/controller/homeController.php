@@ -36,6 +36,11 @@ class homeController extends securedController {
     $this->homeView->getLibrary($string);
   }
 
+  public function getSearch($params = []){
+    $id = $params[':ID'];
+    $this->homeView->getSearch($id);
+  }
+
   public function getMediaInfo(){
     $this->homeView->getMediaInfo();
   }

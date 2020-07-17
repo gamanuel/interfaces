@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-14 15:06:52
+/* Smarty version 3.1.32, created on 2020-07-17 16:52:25
   from 'C:\xampp\htdocs\interfaces\TP5\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f0df43cafae26_46058537',
+  'unifunc' => 'content_5f120179e36e41_43875363',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9956db3ed80efc8bf1a5d25efe298e02f6ba4b28' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\footer.tpl',
-      1 => 1594684384,
+      1 => 1595015510,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0df43cafae26_46058537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f120179e36e41_43875363 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <footer class="footerSpofiy">
 
@@ -42,5 +42,7 @@ function content_5f0df43cafae26_46058537 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"><?php echo '</script'; ?>
 >
-<?php }
+<?php echo '<script'; ?>
+ src="js/player.js"><?php echo '</script'; ?>
+><?php }
 }

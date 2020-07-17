@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-16 20:45:46
+/* Smarty version 3.1.32, created on 2020-07-17 16:04:55
   from 'C:\xampp\htdocs\interfaces\TP5\templates\componentePlaylist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f10e6aa0b4594_44153033',
+  'unifunc' => 'content_5f11f657c22c19_12305771',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f00698f6380e768c171194b461d772512df3acf3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\componentePlaylist.tpl',
-      1 => 1594943128,
+      1 => 1595012692,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f10e6aa0b4594_44153033 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f11f657c22c19_12305771 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="row  bg-blue rounded text-white mt-2">
             <div class="col-8 col-md-8 mt-2 mb-2">
                 <div class="row">
                     <div class=" col-md-12 ">
-                        <h5 class="fontBold">Titulo cancion
+                        <h5 class="fontBold">Titulo Playlist
                             <h5>
                     </div>
                     <div class="col-md-12">
