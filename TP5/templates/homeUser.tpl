@@ -18,7 +18,13 @@
                         <p class="card-text">Podras escuchar todas las canciones que nuestro equipo ha seleccionado especialmente para vos.
                         </p>
                         <p class="card-text"></p>
-                        <a href="library/recomendaciones" class="btn btn-yellow btn-block" data-id="featured">Escuchar ahora</a>
+                        <div class="row ">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-12 col-lg-4  text-right">
+                                <a href="library/recomendaciones" class="btn btn-yellow btn-block" data-id="featured">Descubrilas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -31,7 +37,13 @@
                         <p class="card-text">Creá tus listas, compartilas con tus amigos, agrega toda la musica que quieras, donde quieras.
                         </p>
                         <p class="card-text"></p>
-                        <a  href="library/playlists" class="btn btn-yellow btn-block" data-id="playlists">Escuchar ahora</a>
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-12 col-lg-4 text-right">
+                                <a href="library/playlists" class="btn btn-yellow btn-block" data-id="playlists">Escuchalas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -41,10 +53,16 @@
                     <div class="card-img-overlay">
                         <label class="color-yellow">COMUNIDAD</label>
                         <h4 class="card-title fontBold">Ayudanos a mejorar</h4>
-                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, asd asd asd asd asd asdas asda asd.
+                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
                         </p>
                         <p class="card-text"></p>
-                        <button class="btn btn-yellow btn-block" data-id="cummunity">Escuchar ahora</button>
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-12 col-lg-4 text-right">
+                                <button class="btn btn-block btn-yellow" data-id="cummunity">Unite al grupo</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,7 +75,13 @@
                         <p class="card-text">Las canciones que más te gustan, todas juntas en un solo lugar. Disfrutá cada momento.
                         </p>
                         <p class="card-text"></p>
-                        <a href="library/favoritos" class="btn btn-yellow btn-block" data-id="favorite">Escuchar ahora</a>
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-12 col-lg-4 text-right">
+                                <a href="library/favoritos" class="btn btn-yellow btn-block" data-id="favorite">Recordalos</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,10 +91,7 @@
 </section>
 
 
-{include file="player.tpl"}
-
-
-{include file="footer.tpl"}
+{include file="player.tpl"} {include file="footer.tpl"}
 
 <script src="js/homeUser.js"></script>
 

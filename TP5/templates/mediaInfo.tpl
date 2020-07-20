@@ -23,10 +23,10 @@
                         <small class="text-muted fontBold">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
                     </div>
                     <div class="col-md-12 mt-2">
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
                         <i class="far  d-inline fa-1x fa-star"></i>
                     </div>
                     <div class="col-md-12 mt-2">
@@ -53,8 +53,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-blue btn-block btn-sm mt-2">Publicar opinion</button>
+            <div class="col-md-9">
+
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-blue btn-block btn-sm mt-2">Publica tu opinión</button>
             </div>
         </div>
     </div>
@@ -65,18 +68,16 @@
             <div class="col-md-6">
                 <div class="card  mb-3">
                     <div class="row no-gutters">
-                        <div class="col-5 col-md-4">
-                            <img src="https://www.liberalerna.se/wp-content/uploads/gp_tryck_020-480x480.jpg" class="card-img imagenCardUser rounded-pill">
-                        </div>
-                        <div class="col-7 col-md-8">
+                        <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title">Roberto Oscar Garcia</h5>
+                                <h5 class="card-title"><img src="https://www.liberalerna.se/wp-content/uploads/gp_tryck_020-480x480.jpg" class="card-img imagenCardUser rounded-pill mr-2">Roberto Oscar Garcia</h5>
                                 <p class="card-text">Queen fue absolutamente la mejor banda del día.</p>
-                                <p class="card-text"><small class="text-muted"> <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i></small></p>
+                                <p class="card-text "><small class="text-muted">
+                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far  text-dark d-inline fa-1x fa-star"></i></small></p>
                             </div>
                         </div>
                     </div>
@@ -85,18 +86,16 @@
             <div class="col-md-6">
                 <div class="card  mb-3">
                     <div class="row no-gutters">
-                        <div class="col-5 col-md-4">
-                            <img src="https://avada.theme-fusion.com/wp-content/uploads/2019/07/person_sample_4.jpg" class="card-img imagenCardUser rounded-pill">
-                        </div>
-                        <div class="col-7 col-md-8">
+                        <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title">Manuel Garcia Amaro</h5>
+                                <h5 class="card-title"><img src="https://avada.theme-fusion.com/wp-content/uploads/2019/07/person_sample_4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Manuel Garcia Amaro</h5>
                                 <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
-                                <p class="card-text"><small class="text-muted"> <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i></small></p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
                             </div>
                         </div>
                     </div>

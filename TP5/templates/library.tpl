@@ -11,11 +11,16 @@
 
     {if $id == 'Tus playlists'}
     <div class="container pl-4 pr-4">
-        {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componentePlaylist.tpl"} {/foreach}
+        <div class="row">
+
+            {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componentePlaylist.tpl"} {/foreach}
+        </div>
     </div>
     {else}
     <div class="container pl-4 pr-4">
-        {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componenteMultimedia.tpl"} {/foreach}
+        <div class="row">
+            {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componenteMultimedia.tpl"} {/foreach}
+        </div>
     </div>
     {/if}
 </section>

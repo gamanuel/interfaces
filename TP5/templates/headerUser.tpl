@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-8 col-md-8">
                         <div class="form-group mt-2 mb-2">
-                            <input type="text" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
+                            <input type="search" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
                         </div>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
@@ -78,22 +78,27 @@
         <div class="bg-blue shadow collapse" id="collapseFilters">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-md-12 text-white mt-3">
+                        <p>Elegí que filtrar en tu búsqueda:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Generos</button>
                     </div>
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Artistas</button>
                     </div>
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Albumes</button>
                     </div>
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Podcasts</button>
                     </div>
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Canciones</button>
                     </div>
-                    <div class="col-4 col-md-2 mt-3 mb-3">
+                    <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow">Playlists</button>
                     </div>
                 </div>

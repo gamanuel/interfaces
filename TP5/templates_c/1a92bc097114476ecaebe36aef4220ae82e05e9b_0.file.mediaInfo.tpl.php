@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-16 21:27:59
+/* Smarty version 3.1.32, created on 2020-07-20 19:58:46
   from 'C:\xampp\htdocs\interfaces\TP5\templates\mediaInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f10f08f3a4307_99276854',
+  'unifunc' => 'content_5f1621a603a3a5_37304797',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a92bc097114476ecaebe36aef4220ae82e05e9b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\mediaInfo.tpl',
-      1 => 1594945677,
+      1 => 1595285913,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f10f08f3a4307_99276854 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1621a603a3a5_37304797 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -49,10 +49,10 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <small class="text-muted fontBold">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
                     </div>
                     <div class="col-md-12 mt-2">
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
-                        <i class="far  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
+                        <i class="fas  d-inline fa-1x fa-star"></i>
                         <i class="far  d-inline fa-1x fa-star"></i>
                     </div>
                     <div class="col-md-12 mt-2">
@@ -79,8 +79,11 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-blue btn-block btn-sm mt-2">Publicar opinion</button>
+            <div class="col-md-9">
+
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-blue btn-block btn-sm mt-2">Publica tu opinión</button>
             </div>
         </div>
     </div>
@@ -95,18 +98,16 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
             <div class="col-md-6">
                 <div class="card  mb-3">
                     <div class="row no-gutters">
-                        <div class="col-5 col-md-4">
-                            <img src="https://www.liberalerna.se/wp-content/uploads/gp_tryck_020-480x480.jpg" class="card-img imagenCardUser rounded-pill">
-                        </div>
-                        <div class="col-7 col-md-8">
+                        <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title">Roberto Oscar Garcia</h5>
+                                <h5 class="card-title"><img src="https://www.liberalerna.se/wp-content/uploads/gp_tryck_020-480x480.jpg" class="card-img imagenCardUser rounded-pill mr-2">Roberto Oscar Garcia</h5>
                                 <p class="card-text">Queen fue absolutamente la mejor banda del día.</p>
-                                <p class="card-text"><small class="text-muted"> <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i></small></p>
+                                <p class="card-text "><small class="text-muted">
+                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas  text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far  text-dark d-inline fa-1x fa-star"></i></small></p>
                             </div>
                         </div>
                     </div>
@@ -115,18 +116,16 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
             <div class="col-md-6">
                 <div class="card  mb-3">
                     <div class="row no-gutters">
-                        <div class="col-5 col-md-4">
-                            <img src="https://avada.theme-fusion.com/wp-content/uploads/2019/07/person_sample_4.jpg" class="card-img imagenCardUser rounded-pill">
-                        </div>
-                        <div class="col-7 col-md-8">
+                        <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title">Manuel Garcia Amaro</h5>
+                                <h5 class="card-title"><img src="https://avada.theme-fusion.com/wp-content/uploads/2019/07/person_sample_4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Manuel Garcia Amaro</h5>
                                 <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
-                                <p class="card-text"><small class="text-muted"> <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i></small></p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
                             </div>
                         </div>
                     </div>
