@@ -4,7 +4,7 @@
         <div class="container playerDesktop">
             <div class="row h-100">
                 <div class="col-md-12 d-flex ">
-                    <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." width="60" class="my-auto ">
+                    <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." width="60" class="my-auto rounded">
                     <div class="mx-3 pointer mediaDetail">
                         <p class="mx-2 text-black m-0 d-block  "> <strong> Titulo Canción</strong></p>
                         <small class="mx-2 text-black d-block text-white "> <strong> Artista</strong></small>
@@ -86,14 +86,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="row text-black">
                     <div class="col border-bottom text-center pt-3 ">
                         <div class="pb-3 d-flex ">
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="1"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="2"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="3"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="4"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="5"></i>
                         </div>
                     </div>
                 </div>

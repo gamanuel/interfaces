@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-20 19:59:11
+/* Smarty version 3.1.32, created on 2020-07-20 20:36:31
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1621bfa5b7e0_67758153',
+  'unifunc' => 'content_5f162a7f71e462_22196274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595285950,
+      1 => 1595288189,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1621bfa5b7e0_67758153 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f162a7f71e462_22196274 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -103,7 +103,7 @@ function content_5f1621bfa5b7e0_67758153 (Smarty_Internal_Template $_smarty_tpl)
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-white mt-3">
-                        <p>Elegí que filtrar en tu búsqueda:</p>
+                        <p>Elegí que filtrar en tu búsqueda :</p>
                     </div>
                 </div>
                 <div class="row">

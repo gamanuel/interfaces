@@ -79,7 +79,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-white mt-3">
-                        <p>Elegí que filtrar en tu búsqueda:</p>
+                        <p>Elegí que filtrar en tu búsqueda :</p>
                     </div>
                 </div>
                 <div class="row">

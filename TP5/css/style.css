@@ -188,3 +188,15 @@
         margin: 0;
     }
 }
+
+.starSelected {
+    color: rgb(243, 243, 243);
+}
+
+.starMobile {
+    color: rgb(136, 133, 133) !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(10, 10, 10);
+}

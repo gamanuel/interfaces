@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-17 17:11:55
+/* Smarty version 3.1.32, created on 2020-07-20 20:57:49
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f12060b8d1f83_51840720',
+  'unifunc' => 'content_5f162f7d1228e6_44774937',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595016713,
+      1 => 1595289467,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f12060b8d1f83_51840720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f162f7d1228e6_44774937 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
         <div class="container playerDesktop">
             <div class="row h-100">
                 <div class="col-md-12 d-flex ">
-                    <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." width="60" class="my-auto ">
+                    <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." width="60" class="my-auto rounded">
                     <div class="mx-3 pointer mediaDetail">
                         <p class="mx-2 text-black m-0 d-block  "> <strong> Titulo Canción</strong></p>
                         <small class="mx-2 text-black d-block text-white "> <strong> Artista</strong></small>
@@ -109,14 +109,14 @@ function content_5f12060b8d1f83_51840720 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
                 </div>
-                <div class="row text-white">
+                <div class="row text-black">
                     <div class="col border-bottom text-center pt-3 ">
                         <div class="pb-3 d-flex ">
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
-                            <i class="far mx-auto fa-2x fa-star"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="1"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="2"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="3"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="4"></i>
+                            <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="5"></i>
                         </div>
                     </div>
                 </div>
