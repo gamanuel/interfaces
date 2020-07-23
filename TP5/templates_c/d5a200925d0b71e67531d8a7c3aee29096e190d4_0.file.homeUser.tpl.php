@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-20 20:12:35
+/* Smarty version 3.1.32, created on 2020-07-21 15:54:06
   from 'C:\xampp\htdocs\interfaces\TP5\templates\homeUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1624e33f0045_23035202',
+  'unifunc' => 'content_5f1739ce988161_36203535',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5a200925d0b71e67531d8a7c3aee29096e190d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\homeUser.tpl',
-      1 => 1595286748,
+      1 => 1595357645,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1624e33f0045_23035202 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1739ce988161_36203535 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -74,7 +74,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 mt-3 col-md-6">
+            <div class="col-12 px-0 mt-4 col-md-6">
                 <div class="card bg-dark text-white">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
                     <div class="card-img-overlay">
@@ -93,7 +93,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 mt-3 col-md-6">
+            <div class="col-12 px-0 mt-4 col-md-6">
                 <div class="card bg-dark text-white">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
                     <div class="card-img-overlay">

@@ -10,8 +10,10 @@
                         <small class="mx-2 text-black d-block text-white "> <strong> Artista</strong></small>
                         <small class="mx-2 text-black d-block"> <strong> 100 visitas</strong></small>
                     </div>
-                    <div class="my-auto ml-5 mr-2">
-                        <i class="align-middle my-auto  far fa-1x fa-heart"></i>
+                    <div class="my-auto ml-5 mr-2 pointer " >
+                        <h5 class="my-auto ">
+                        <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart" id="likeButton"></i>
+                        </h5>
                     </div>
                     <div class="my-auto ml-3 mr-2">
                         <button class="btn btn-sm btn-outline-black "><i class="fas fa-folder-plus"></i></button>
@@ -19,12 +21,12 @@
                     <div class="my-auto ml-2 mr-5">
                         <button class="btn btn-sm btn-outline-black "><i class="fas fa-share-alt"></i></button>
                     </div>
-                    <div class="my-auto text-black mx-5 starDivContainer">
-                        <i class="far fa-star rateDesktop pointer" data-id="1"></i>
-                        <i class="far fa-star rateDesktop pointer" data-id="2"></i>
-                        <i class="far fa-star rateDesktop pointer" data-id="3"></i>
-                        <i class="far fa-star rateDesktop pointer" data-id="4"></i>
-                        <i class="far fa-star rateDesktop pointer" data-id="5"></i>
+                    <div class="my-auto text-black mx-5 starDivContainer pointer">
+                        <i class="far fa-star rateDesktop pointer " data-id="1"></i>
+                        <i class="far fa-star rateDesktop pointer " data-id="2"></i>
+                        <i class="far fa-star rateDesktop pointer " data-id="3"></i>
+                        <i class="far fa-star rateDesktop pointer " data-id="4"></i>
+                        <i class="far fa-star rateDesktop pointer " data-id="5"></i>
                     </div>
                     <div class="my-auto mx-5 text-black d-flex">
                         <i class=" my-auto fas fa-volume-up"></i>
@@ -46,7 +48,7 @@
         <div class="container playerMobile">
             <div class="row h-100 " style="font-size: 1.2em;">
                 <div class="col py-2 d-flex ">
-                    <i class="my-auto pr-2 fas fa-1x fa-chevron-up pointer" data-toggle="collapse" href="#collapsePlayer"></i>
+                    <i class="my-auto pr-2 fas fa-1x fa-chevron-up pointer" data-toggle="collapse" href="#collapsePlayer" id="arrowOpenPlayer"></i>
                     <div class="mx-2 mediaDetail">
                         <p class="mx-2 text-black m-0 d-block"> <strong> Titulo Canción</strong></p>
                         <small class="mx-2 text-black d-block text-white"> <strong> Artista</strong></small>
@@ -80,7 +82,7 @@
                 <div class="row text-white">
                     <div class="col border-bottom text-center pt-3 ">
                         <div class="pb-3 d-flex ">
-                            <i class="my-auto mx-auto far fa-2x fa-heart"></i>
+                            <i class="my-auto mx-auto far fa-2x fa-heart" id="likeButton"></i>
                             <button class="mx-auto  btn btn-outline-light "><i class="fas fa-folder-plus"></i></button>
                             <button class="mx-auto  btn  btn-outline-light "><i class="fas fa-share-alt"></i></button>
                         </div>

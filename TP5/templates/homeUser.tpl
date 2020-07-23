@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 mt-3 col-md-6">
+            <div class="col-12 px-0 mt-4 col-md-6">
                 <div class="card bg-dark text-white">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
                     <div class="card-img-overlay">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 mt-3 col-md-6">
+            <div class="col-12 px-0 mt-4 col-md-6">
                 <div class="card bg-dark text-white">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
                     <div class="card-img-overlay">

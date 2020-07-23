@@ -18,8 +18,8 @@
     </div>
     {else}
     <div class="container pl-4 pr-4">
-        <div class="row">
-            {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componenteMultimedia.tpl"} {/foreach}
+        <div class="row" id="musicContainer">
+
         </div>
     </div>
     {/if}
@@ -27,3 +27,4 @@
 
 
 {include file="footer.tpl"}
+<script src="js/library.js"></script>
