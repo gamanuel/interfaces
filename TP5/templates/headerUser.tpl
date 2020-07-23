@@ -43,7 +43,7 @@
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Destacados</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Playlists</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Favoritos</a>
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#"><i class="fas fa-bell"></i></a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Notificaciones</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Mi perfil</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Cerrar Sesión</a>

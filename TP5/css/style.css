@@ -183,6 +183,10 @@
     transform: rotate(180deg);
 }
 
+.mostrarMobile {
+    display: block;
+}
+
 @keyframes animation {
     0% {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -219,6 +223,9 @@
     }
     .mediaDetailRep {
         margin: 0;
+    }
+    .mostrarMobile {
+        display: none;
     }
 }
 

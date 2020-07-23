@@ -6,8 +6,8 @@
                 <div class="col-md-12 d-flex ">
                     <img src=""  alt="..." width="60" class="my-auto rounded mediaImagePlayer">
                     <div class="mx-3 pointer mediaDetail">
-                        <p class="mx-2 text-black m-0 d-block  mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> Titulo Canción</strong></p>
-                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate" style="max-width: 130px;"> <strong> Artista</strong></small>
+                        <p class="mx-2 text-black m-0 d-block  mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> </strong></p>
+                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate" style="max-width: 130px;"> <strong> </strong></small>
                         <small class="mx-2 text-black d-block"> <strong> 100 visitas</strong></small>
                     </div>
                     <div class="my-auto ml-5 mr-2 pointer ">
@@ -50,8 +50,8 @@
                 <div class="col py-2 d-flex ">
                     <i class="my-auto pr-2 fas fa-1x fa-chevron-up pointer" data-toggle="collapse" href="#collapsePlayer" id="arrowOpenPlayer"></i>
                     <div class="mx-2 mediaDetail">
-                        <p class="mx-2 text-black m-0 d-block"> <strong> Titulo Canción</strong></p>
-                        <small class="mx-2 text-black d-block text-white"> <strong> Artista</strong></small>
+                        <p class="mx-2 text-black m-0 d-block mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> </strong></p>
+                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate"> <strong> </strong></small>
                     </div>
                     <div class="my-auto mx-3 text-black">
                         <i class="fas   fa-step-backward mr-2"></i>

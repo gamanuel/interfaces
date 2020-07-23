@@ -27,13 +27,13 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="color-black fontBlack">Álbumes</h3>
+                <h3 class="color-black fontBlack">Canciones</h3>
             </div>
         </div>
         <div class="row">
-            {foreach from=[1,2,3,4] item=item }
+            {foreach from=[1,2,3,4] item=item  key=list}
             <div class="col-6 col-md-3 col-lg-3 p-4">
-                <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." class="img-thumbnail">
+                <img src="images/songs/{$list}.jpg" alt="..." class="img-thumbnail">
             </div>
             {/foreach}
         </div>

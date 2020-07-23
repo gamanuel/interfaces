@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-14 15:06:52
+/* Smarty version 3.1.32, created on 2020-07-23 20:24:18
   from 'C:\xampp\htdocs\interfaces\TP5\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f0df43c9edd84_37366252',
+  'unifunc' => 'content_5f1a1c22c3c469_28136540',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '798dbf218e16698f70e569019c27709509260ab3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\home.tpl',
-      1 => 1594684358,
+      1 => 1595546657,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f0df43c9edd84_37366252 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1a1c22c3c469_28136540 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -53,17 +53,18 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="color-black fontBlack">Álbumes</h3>
+                <h3 class="color-black fontBlack">Canciones</h3>
             </div>
         </div>
         <div class="row">
             <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, array(1,2,3,4), 'item');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, array(1,2,3,4), 'item', false, 'list');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['list']->value => $_smarty_tpl->tpl_vars['item']->value) {
 ?>
             <div class="col-6 col-md-3 col-lg-3 p-4">
-                <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." class="img-thumbnail">
+                <img src="images/songs/<?php echo $_smarty_tpl->tpl_vars['list']->value;?>
+.jpg" alt="..." class="img-thumbnail">
             </div>
             <?php
 }

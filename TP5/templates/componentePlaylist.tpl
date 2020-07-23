@@ -30,7 +30,6 @@
             <div class="row mt-6">
                 <div class="col-md-12">
                     <i class="fas  fa-play fa-1x"></i>
-
                 </div>
             </div>
         </div>
