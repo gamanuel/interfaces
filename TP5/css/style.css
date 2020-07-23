@@ -162,6 +162,10 @@
     display: none;
 }
 
+.marginBottom6 {
+    margin-bottom: 70px;
+}
+
 .pointer {
     cursor: pointer;
 }

@@ -1,5 +1,4 @@
 <div class="col-lg-4">
-
     <div class="row  bg-blue rounded text-white mt-2 mediaDetailRep">
         <div class="col-8 col-md-8 mt-2 mb-2">
             <div class="row">

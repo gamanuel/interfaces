@@ -2,6 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
+    const player = document.querySelector('#player');
+    const namePlayer = document.querySelectorAll('.mediaNamePlayer');
+    const artistPlayer = document.querySelectorAll('.mediaArtistPlayer');
+    const imagePlayer = document.querySelectorAll('.mediaImagePlayer');
+
     const stars = document.querySelectorAll('.rateDesktop');
     let starRange = 0;
 
@@ -11,6 +16,30 @@ document.addEventListener('DOMContentLoaded', function(event) {
         r.addEventListener('click', e => {
             location.href = 'media-info';
         });
+    });
+
+    document.querySelectorAll('.playButton').forEach(r => {
+        r.addEventListener('click', e => {
+
+            player.classList.remove('d-none');
+
+            namePlayer.forEach(f => {
+                f.innerHTML = r.getAttribute('data-name');
+            });
+
+            artistPlayer.forEach(f => {
+                f.innerHTML = r.getAttribute('data-artist');
+            });
+
+            imagePlayer.forEach(f => {
+                f.src = 'images/songs/' + r.getAttribute('data-image') + '.jpg';
+            });
+
+
+
+
+
+        })
     });
 
     stars.forEach(r => {

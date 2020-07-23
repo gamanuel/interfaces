@@ -1,6 +1,6 @@
 {include file="headerUser.tpl"}
 
-<section class="mb-4">
+<section class="marginBottom6">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-3 ">
@@ -12,8 +12,9 @@
     {if $id == 'Tus playlists'}
     <div class="container pl-4 pr-4">
         <div class="row">
+            <div class="row" id="playlistContainer">
 
-            {foreach from=[1,2,3,4,5,6,7,8] item=item} {include file="componentePlaylist.tpl"} {/foreach}
+            </div>
         </div>
     </div>
     {else}
@@ -25,6 +26,6 @@
     {/if}
 </section>
 
-
-{include file="footer.tpl"}
+ {include file="footer.tpl"}
 <script src="js/library.js"></script>
+{include file="player.tpl"}

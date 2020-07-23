@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-20 19:58:46
+/* Smarty version 3.1.32, created on 2020-07-22 23:58:18
   from 'C:\xampp\htdocs\interfaces\TP5\templates\mediaInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1621a603a3a5_37304797',
+  'unifunc' => 'content_5f18fcca37e943_99325860',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a92bc097114476ecaebe36aef4220ae82e05e9b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\mediaInfo.tpl',
-      1 => 1595285913,
+      1 => 1595473097,
       2 => 'file',
     ),
   ),
@@ -22,9 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1621a603a3a5_37304797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f18fcca37e943_99325860 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+
+<input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+" id="mediaId">
 
 <section class="mb-4">
     <div class="container">
@@ -38,15 +41,15 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-4">
-                <img src="https://dam.esquirelat.com/wp-content/uploads/2019/03/Queen2AlbumCover_London1974cMickRockcover.jpg" class="img-fluid rounded" alt="" srcset="">
+                <img src="https://dam.esquirelat.com/wp-content/uploads/2019/03/Queen2AlbumCover_London1974cMickRockcover.jpg" id="imageMedia" class="img-fluid rounded" alt="" srcset="">
             </div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12 mt-2">
-                        <h4 class="fontBold">Queen</h4>
+                        <h4 class="fontBold" id="nameMedia">Queen</h4>
                     </div>
                     <div class="col-md-12">
-                        <small class="text-muted fontBold">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
+                        <small class="text-muted fontBold" id="artistMedia">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
                     </div>
                     <div class="col-md-12 mt-2">
                         <i class="fas  d-inline fa-1x fa-star"></i>
@@ -143,5 +146,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </section>
 
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
+echo '<script'; ?>
+ src="js/mediaInfo.js"><?php echo '</script'; ?>
+><?php }
 }

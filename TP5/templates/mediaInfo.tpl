@@ -1,5 +1,7 @@
 {include file="headerUser.tpl"}
 
+<input type="hidden" value="{$id}" id="mediaId">
+
 <section class="mb-4">
     <div class="container">
         <div class="row">
@@ -12,15 +14,15 @@
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-4">
-                <img src="https://dam.esquirelat.com/wp-content/uploads/2019/03/Queen2AlbumCover_London1974cMickRockcover.jpg" class="img-fluid rounded" alt="" srcset="">
+                <img src="https://dam.esquirelat.com/wp-content/uploads/2019/03/Queen2AlbumCover_London1974cMickRockcover.jpg" id="imageMedia" class="img-fluid rounded" alt="" srcset="">
             </div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12 mt-2">
-                        <h4 class="fontBold">Queen</h4>
+                        <h4 class="fontBold" id="nameMedia">Queen</h4>
                     </div>
                     <div class="col-md-12">
-                        <small class="text-muted fontBold">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
+                        <small class="text-muted fontBold" id="artistMedia">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
                     </div>
                     <div class="col-md-12 mt-2">
                         <i class="fas  d-inline fa-1x fa-star"></i>
@@ -110,3 +112,4 @@
 </section>
 
 {include file="footer.tpl"}
+<script src="js/mediaInfo.js"></script>

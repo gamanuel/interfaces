@@ -1,18 +1,18 @@
-<div class=" position-fixed" style="bottom: 0; width: 100%;">
+<div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
         <div class="container playerDesktop">
             <div class="row h-100">
                 <div class="col-md-12 d-flex ">
-                    <img src="https://img.discogs.com/i-3zFLbT4-s6Dm_0Fs5zg3nmQ4w=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12252821-1535317927-2134.jpeg.jpg" alt="..." width="60" class="my-auto rounded">
+                    <img src=""  alt="..." width="60" class="my-auto rounded mediaImagePlayer">
                     <div class="mx-3 pointer mediaDetail">
-                        <p class="mx-2 text-black m-0 d-block  "> <strong> Titulo Canción</strong></p>
-                        <small class="mx-2 text-black d-block text-white "> <strong> Artista</strong></small>
+                        <p class="mx-2 text-black m-0 d-block  mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> Titulo Canción</strong></p>
+                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate" style="max-width: 130px;"> <strong> Artista</strong></small>
                         <small class="mx-2 text-black d-block"> <strong> 100 visitas</strong></small>
                     </div>
-                    <div class="my-auto ml-5 mr-2 pointer " >
+                    <div class="my-auto ml-5 mr-2 pointer ">
                         <h5 class="my-auto ">
-                        <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart" id="likeButton"></i>
+                            <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart" id="likeButton"></i>
                         </h5>
                     </div>
                     <div class="my-auto ml-3 mr-2">
@@ -103,3 +103,5 @@
         </div>
     </div>
 </div>
+
+<script src="js/player.js"></script>
