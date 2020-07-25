@@ -40,9 +40,9 @@
                             <i class="far fa-user-circle"></i> Hola Manuel
                         </a>
                         <div class="dropdown-menu dropdown-menu-right bg-blue " aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Destacados</a>
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Playlists</a>
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Favoritos</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/recomendaciones">Recomendaciones</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/playlists">Playlists</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/favoritos">Favoritos</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Notificaciones</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Mi perfil</a>
                             <div class="dropdown-divider"></div>

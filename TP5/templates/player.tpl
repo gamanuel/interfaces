@@ -12,7 +12,7 @@
                     </div>
                     <div class="my-auto ml-5 mr-2 pointer ">
                         <h5 class="my-auto ">
-                            <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart" id="likeButton"></i>
+                            <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart likeButton" ></i>
                         </h5>
                     </div>
                     <div class="my-auto ml-3 mr-2">
@@ -82,7 +82,7 @@
                 <div class="row text-white">
                     <div class="col border-bottom text-center pt-3 ">
                         <div class="pb-3 d-flex ">
-                            <i class="my-auto mx-auto far fa-2x fa-heart" id="likeButton"></i>
+                            <i class="my-auto mx-auto far fa-2x fa-heart Mobile text-white likeButton" ></i>
                             <button class="mx-auto  btn btn-outline-light "><i class="fas fa-folder-plus"></i></button>
                             <button class="mx-auto  btn  btn-outline-light "><i class="fas fa-share-alt"></i></button>
                         </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 13:46:46
+/* Smarty version 3.1.32, created on 2020-07-25 14:05:13
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1c61f655a473_64802500',
+  'unifunc' => 'content_5f1c6649c35ba4_94886485',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595695454,
+      1 => 1595696711,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1c61f655a473_64802500 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1c6649c35ba4_94886485 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -64,9 +64,9 @@ function content_5f1c61f655a473_64802500 (Smarty_Internal_Template $_smarty_tpl)
                             <i class="far fa-user-circle"></i> Hola Manuel
                         </a>
                         <div class="dropdown-menu dropdown-menu-right bg-blue " aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Destacados</a>
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Playlists</a>
-                            <a class="dropdown-item text-white hoverDropdownMenu" href="#">Favoritos</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/recomendaciones">Recomendaciones</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/playlists">Playlists</a>
+                            <a class="dropdown-item text-white hoverDropdownMenu" href="library/favoritos">Favoritos</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Notificaciones</a>
                             <a class="dropdown-item text-white hoverDropdownMenu" href="#">Mi perfil</a>
                             <div class="dropdown-divider"></div>

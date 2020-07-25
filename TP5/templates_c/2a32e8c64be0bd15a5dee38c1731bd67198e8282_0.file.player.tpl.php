@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 13:55:54
+/* Smarty version 3.1.32, created on 2020-07-25 17:21:12
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1c641a1085c5_27679380',
+  'unifunc' => 'content_5f1c9438c759a4_90749575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595696126,
+      1 => 1595708469,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1c641a1085c5_27679380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1c9438c759a4_90749575 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
@@ -35,7 +35,7 @@ function content_5f1c641a1085c5_27679380 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                     <div class="my-auto ml-5 mr-2 pointer ">
                         <h5 class="my-auto ">
-                            <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart" id="likeButton"></i>
+                            <i class="align-middle likeButton my-auto  text-black far fa-1x fa-heart likeButton" ></i>
                         </h5>
                     </div>
                     <div class="my-auto ml-3 mr-2">
@@ -105,7 +105,7 @@ function content_5f1c641a1085c5_27679380 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="row text-white">
                     <div class="col border-bottom text-center pt-3 ">
                         <div class="pb-3 d-flex ">
-                            <i class="my-auto mx-auto far fa-2x fa-heart" id="likeButton"></i>
+                            <i class="my-auto mx-auto far fa-2x fa-heart Mobile text-white likeButton" ></i>
                             <button class="mx-auto  btn btn-outline-light "><i class="fas fa-folder-plus"></i></button>
                             <button class="mx-auto  btn  btn-outline-light "><i class="fas fa-share-alt"></i></button>
                         </div>

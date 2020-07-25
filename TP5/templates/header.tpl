@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top paddingNavbar">
         <a class="navbar-brand text-white" href="#"><i class="far fa-play-circle"></i> <span class="fontLight">spo</span><span class="fontBold">fiy</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,23 +26,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
-                <!-- <li class="nav-item active text-white">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li> -->
                 <li class="nav-item mr-2">
                     <a class="nav-link text-white spofiyHover" href="#">FAQS</a>
                 </li>
-                <!-- <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> -->
+            
                 <li class="nav-item">
                     <a class="nav-link text-white spofiyHover" href="" data-toggle="modal" data-target="#loginModal"><i class="far fa-user-circle " ></i> Iniciar Sesion</a>
                 </li>

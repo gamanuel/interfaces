@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     const stars = document.querySelectorAll('.rateDesktop');
     let starRange = 0;
 
-    const btnLike = document.querySelector('#likeButton');
+    const btnLike = document.querySelectorAll('.likeButton');
     const btnArrow = document.querySelector('#arrowOpenPlayer');
     document.querySelectorAll('.mediaDetail').forEach(r => {
         r.addEventListener('click', e => {
@@ -83,17 +83,34 @@ document.addEventListener('DOMContentLoaded', function(event) {
         });
     });
 
-    btnLike.addEventListener('click', r => {
-        if (btnLike.classList.contains('text-black')) {
-            btnLike.classList.remove('text-black');
-            btnLike.classList.add('text-white');
-            btnLike.classList.add('rotateAnimation');
-        } else {
-            btnLike.classList.remove('text-white');
-            btnLike.classList.add('text-black');
-            btnLike.classList.remove('rotateAnimation');
-        }
-    });
+    btnLike.forEach(r => {
+        r.addEventListener('click', e => {
+            if (r.classList.contains('Mobile')) {
+                console.log('toque');
+                if (r.classList.contains('text-white')) {
+                    r.classList.remove('text-white');
+                    r.classList.add('rotateAnimation');
+                    r.classList.add('text-yellow');
+                } else {
+                    r.classList.remove('text-yellow');
+                    r.classList.add('text-white');
+                    r.classList.remove('rotateAnimation');
+                }
+            } else {
+                if (r.classList.contains('text-black')) {
+                    r.classList.remove('text-black');
+                    r.classList.add('text-white');
+                    r.classList.add('rotateAnimation');
+                } else {
+                    r.classList.remove('text-white');
+                    r.classList.add('text-black');
+                    r.classList.remove('rotateAnimation');
+                }
+            }
+        });
+    })
+
+
 
     btnArrow.addEventListener('click', r => {
         if (!btnArrow.classList.contains('rotateArrow')) {
