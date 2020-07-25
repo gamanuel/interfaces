@@ -83,6 +83,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
         });
     });
 
+    document.querySelectorAll('.closePlayer').forEach(r => {
+        r.addEventListener('click', e => {
+            player.classList.add('d-none');
+        });
+    });
+
     btnLike.forEach(r => {
         r.addEventListener('click', e => {
             if (r.classList.contains('Mobile')) {
@@ -109,8 +115,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             }
         });
     })
-
-
 
     btnArrow.addEventListener('click', r => {
         if (!btnArrow.classList.contains('rotateArrow')) {

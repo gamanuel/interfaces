@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-23 20:33:26
+/* Smarty version 3.1.32, created on 2020-07-25 19:31:26
   from 'C:\xampp\htdocs\interfaces\TP5\templates\library.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1a1e460b7c57_45677629',
+  'unifunc' => 'content_5f1cb2bea02169_44614321',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81d2934ec544a50afa34edd279137ce6a537b41a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\library.tpl',
-      1 => 1595547134,
+      1 => 1595716284,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:player.tpl' => 1,
   ),
 ),false)) {
-function content_5f1a1e460b7c57_45677629 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1cb2bea02169_44614321 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -62,12 +62,42 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
     <?php }?>
 </section>
 
+<div class="modal fade" id="modalAddToPlaylist" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-blue">
+      <div class="modal-header">
+        <h5 class="modal-title text-white"> Agregar a una playlist</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-white">
+        <label > Canción: <strong id="songNameAddToPlaylist"></strong> </label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>Seleccione una playlist</option>
+            <option>Previa</option>
+            <option>Musica para gym</option>
+            <option>Cachengue</option>
+            <option>Tropical House</option>
+            <option>Deep House</option>
+            <option>Para la Oficina</option>
+            <option>Relajante</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-yellow">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
  src="js/library.js?v1.3"><?php echo '</script'; ?>
 >
 <?php $_smarty_tpl->_subTemplateRender("file:player.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+
 
 
 <div class="modal fade" tabindex="-1" id="modalPlaylist" role="dialog">

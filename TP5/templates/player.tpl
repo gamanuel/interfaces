@@ -37,8 +37,8 @@
                         <i class="fas fa-play mx-2"></i>
                         <i class="fas fa-step-forward mx-2"></i>
                     </div>
-                    <div class="ml-auto my-auto text-black">
-                        <i class=" fas fa-times"></i>
+                    <div class="ml-auto my-auto text-black pointer">
+                        <i class=" fas fa-times closePlayer "></i>
                     </div>
 
 
@@ -58,8 +58,8 @@
                         <i class="fas  fa-play mx-2"></i>
                         <i class="fas  fa-step-forward ml-2"></i>
                     </div>
-                    <div class="ml-auto my-auto text-black">
-                        <i class=" fas fa-times"></i>
+                    <div class="ml-auto my-auto text-black pointer">
+                        <i class=" fas fa-times closePlayer"></i>
                     </div>
                 </div>
             </div>

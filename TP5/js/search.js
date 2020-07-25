@@ -112,24 +112,27 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 cont++;
                 template += `
                 <div class="col-lg-6">
-                    <div class="row   rounded text-white mt-2 pointer mediaDetailRep bg-blue">
-                        <div class="col-2 col-md-2  my-auto p-2">
-                            <img src="images/songs/${item.image}.jpg" alt="" class="img-fluid imgMediaDetail rounded" srcset="">
-                        </div>
-                        <div class="col-5 col-md-6  my-auto">
-                            <p class="text-truncate">${item.name}</p>
-                            <small>${item.artist}</small>
-                        </div>
-                        <div class="col-1 col-md-2">
-                        </div>
-                        <div class="col-2 col-md-1 text-right my-auto">
-                            <i class="fas  fa-play mx-2"></i>
-                        </div>
-                        <div class="col-2 col-md-1 text-center my-auto">
-                            <i class="fas fa-ellipsis-v"></i>
+                <div class="row   rounded text-white mt-2  mediaDetailRep bg-blue">
+                    <div class="col-2 col-md-2  my-auto p-2">
+                        <img src="images/songs/${item.image}.jpg" alt="" class="img-fluid imgMediaDetail rounded" srcset="">
+                    </div>
+                    <div class="col-6 col-md-6  my-auto mediaInfoRed pointer" data-id="${item.image}">
+                        <p class="text-truncate">${item.name}</p>
+                        <small>${item.artist}</small>
+                    </div>
+                    <div class="mostrarMobile col-md-2">
+                    </div>
+                    <div class="col-2 col-md-1 text-right my-auto playButton pointer" data-name="${item.name}" data-artist="${item.artist}" data-image="${item.image}">
+                        <i class="fas  fa-play mx-2"></i>
+                    </div>
+                    <div class="col-2 col-md-1 text-center my-auto">
+                        <i class="fas fa-ellipsis-v pointer"  data-toggle="dropdown"></i>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item addToPLaylist" href="#">Agregar a una playlist</a>
                         </div>
                     </div>
                 </div>
+            </div>
                 `;
             }
         }

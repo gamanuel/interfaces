@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', r => {
             image: '1'
         },
         {
-            name: 'Everything Everything',
-            artist: 'Kemosabe',
+            name: 'Kemosabe',
+            artist: 'Everything Everything',
             image: '2'
         },
         {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', r => {
                     <div class="col-2 col-md-1 text-center my-auto">
                         <i class="fas fa-ellipsis-v pointer"  data-toggle="dropdown"></i>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Agregar a una playlist</a>
+                            <a class="dropdown-item addToPLaylist pointer" data-name="${item.name}">Agregar a una playlist</a>
                         </div>
                     </div>
                 </div>
@@ -117,6 +117,15 @@ document.addEventListener('DOMContentLoaded', r => {
                 location.href = 'media-info/' + m.getAttribute('data-id');
             });
         });
+
+        document.querySelectorAll('.addToPLaylist').forEach(r => {
+            r.addEventListener('click', e => {
+                document.querySelector('#songNameAddToPlaylist').innerHTML = r.getAttribute('data-name');
+                $('#modalAddToPlaylist').modal('show');
+
+            });
+        });
+
     }
 
     if (document.querySelector('#playlistContainer')) {

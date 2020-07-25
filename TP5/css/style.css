@@ -245,6 +245,10 @@
     color: rgb(243, 243, 243);
 }
 
+.starSelectedInfo {
+    color: #FCA311 !important;
+}
+
 .starMobile {
     color: rgb(136, 133, 133) !important;
 }
