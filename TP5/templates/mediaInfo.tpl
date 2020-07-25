@@ -66,13 +66,32 @@
 
     <div class="container mt-3">
         <div class="row">
-            {foreach from=[1,2,3,4,5] item=item }
+         <div class="col-md-6">
+                <div class="card  mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSAkjktNk_waKZ6A064JikKQRYLxoKPNIUR_g&usqp=CAU"  class="card-img imagenCardUser rounded-pill mr-2"> Yanina Latorre</h5>
+                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
             <div class="col-md-6">
                 <div class="card  mb-3">
                     <div class="row no-gutters">
                         <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title"><img src="https://www.liberalerna.se/wp-content/uploads/gp_tryck_020-480x480.jpg" class="card-img imagenCardUser rounded-pill mr-2">Roberto Oscar Garcia</h5>
+                                <h5 class="card-title"><img src="images/avatar/5.jpg" class="card-img imagenCardUser  rounded-pill mr-2">Roberto Oscar Garcia</h5>
                                 <p class="card-text">Queen fue absolutamente la mejor banda del día.</p>
                                 <p class="card-text "><small class="text-muted">
                                      <i class="fas text-dark d-inline fa-1x fa-star"></i>
@@ -90,7 +109,43 @@
                     <div class="row no-gutters">
                         <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title"><img src="https://avada.theme-fusion.com/wp-content/uploads/2019/07/person_sample_4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Manuel Garcia Amaro</h5>
+                                <h5 class="card-title"><img src="images/avatar/6.jpg"  class="card-img imagenCardUser rounded-pill mr-2"> Manuel Garcia Amaro</h5>
+                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card  mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title"><img src="images/avatar/2.jpg"  class="card-img imagenCardUser rounded-pill mr-2"> Manuel Rivas</h5>
+                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card  mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title"><img src="images/avatar/3.jpg"  class="card-img imagenCardUser rounded-pill mr-2"> Martin Villa</h5>
                                 <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
@@ -103,8 +158,24 @@
                     </div>
                 </div>
             </div>
-
-            {/foreach}
+            <div class="col-md-6">
+                <div class="card  mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title"><img src="images/avatar/4.jpg"  class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Savedra</h5>
+                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text"><small class="text-muted"> 
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

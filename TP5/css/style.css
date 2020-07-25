@@ -86,6 +86,11 @@
     color: black;
 }
 
+.active-yellow {
+    color: black;
+    background-color: #FCA311 !important;
+}
+
 .btn-black {
     background-color: black;
     color: white;
@@ -226,6 +231,9 @@
     }
     .mostrarMobile {
         display: none;
+    }
+    .starSelected {
+        color: #FCA311 !important;
     }
 }
 

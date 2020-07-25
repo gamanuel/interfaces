@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="row text-black">
-                    <div class="col border-bottom text-center pt-3 ">
+                    <div class="col border-bottom text-center text-white pt-3 ">
                         <div class="pb-3 d-flex ">
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="1"></i>
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="2"></i>

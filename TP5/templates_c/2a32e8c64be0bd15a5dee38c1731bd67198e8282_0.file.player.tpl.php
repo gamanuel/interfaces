@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-23 17:21:22
+/* Smarty version 3.1.32, created on 2020-07-25 13:55:54
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f19f142474438_40390505',
+  'unifunc' => 'content_5f1c641a1085c5_27679380',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595535675,
+      1 => 1595696126,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f19f142474438_40390505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1c641a1085c5_27679380 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
@@ -112,7 +112,7 @@ function content_5f19f142474438_40390505 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
                 <div class="row text-black">
-                    <div class="col border-bottom text-center pt-3 ">
+                    <div class="col border-bottom text-center text-white pt-3 ">
                         <div class="pb-3 d-flex ">
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="1"></i>
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="2"></i>

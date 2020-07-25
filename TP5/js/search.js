@@ -10,6 +10,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
         }
     });
 
+    document.querySelectorAll('.btnFilter').forEach(r => {
+
+        r.addEventListener('click', e => {
+            console.log('hola');
+            if (r.classList.contains('active-yellow')) {
+                r.classList.remove('active-yellow');
+            } else {
+                r.classList.add('active-yellow');
+            }
+
+        })
+
+    });
+
     if (document.querySelector('#searchInputValue')) {
 
         let songs = [{
@@ -197,5 +211,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         </div>`;
         }
     }
+
+
 
 });

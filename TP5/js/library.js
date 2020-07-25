@@ -103,8 +103,7 @@ document.addEventListener('DOMContentLoaded', r => {
                     <div class="col-2 col-md-1 text-center my-auto">
                         <i class="fas fa-ellipsis-v pointer"  data-toggle="dropdown"></i>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Editar playlist</a>
-                            <a class="dropdown-item" href="#">Eliminar playlist</a>
+                            <a class="dropdown-item" href="#">Agregar a una playlist</a>
                         </div>
                     </div>
                 </div>

@@ -84,22 +84,22 @@
                 </div>
                 <div class="row">
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Generos</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Generos</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Artistas</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Artistas</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Albumes</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Albumes</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Podcasts</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Podcasts</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Canciones</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Canciones</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Playlists</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Playlists</button>
                     </div>
                 </div>
             </div>

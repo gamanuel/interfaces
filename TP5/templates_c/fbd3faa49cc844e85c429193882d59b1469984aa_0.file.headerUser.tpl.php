@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-23 17:12:59
+/* Smarty version 3.1.32, created on 2020-07-25 13:46:46
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f19ef4ba14773_25670329',
+  'unifunc' => 'content_5f1c61f655a473_64802500',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595535176,
+      1 => 1595695454,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f19ef4ba14773_25670329 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1c61f655a473_64802500 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -108,22 +108,22 @@ function content_5f19ef4ba14773_25670329 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <div class="row">
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Generos</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Generos</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Artistas</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Artistas</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Albumes</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Albumes</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Podcasts</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Podcasts</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Canciones</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Canciones</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow">Playlists</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Playlists</button>
                     </div>
                 </div>
             </div>
