@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-22 23:26:55
+/* Smarty version 3.1.32, created on 2020-07-26 13:03:51
   from 'C:\xampp\htdocs\interfaces\TP5\templates\homeUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f18f56f0434b4_16559524',
+  'unifunc' => 'content_5f1da967225302_00763666',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5a200925d0b71e67531d8a7c3aee29096e190d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\homeUser.tpl',
-      1 => 1595471213,
+      1 => 1595779429,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f18f56f0434b4_16559524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1da967225302_00763666 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -48,7 +48,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="row ">
                             <div class="col-md-8">
                             </div>
-                            <div class="col-12 col-lg-4  text-right">
+                            <div class="col-12 col-lg-4  text-right rotateAnimationHome">
                                 <a href="library/recomendaciones" class="btn btn-yellow btn-block" data-id="featured">Descubrilas</a>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                 </div>
             </div>
             <div class="col-12 px-0 mt-3 col-md-6">
-                <div class="card bg-dark text-white">
+                <div class="card bg-dark text-white ">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
                     <div class="card-img-overlay">
                         <label class="color-yellow">TUS</label>
@@ -67,32 +67,14 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="row">
                             <div class="col-md-8">
                             </div>
-                            <div class="col-12 col-lg-4 text-right">
+                            <div class="col-12 col-lg-4 text-right rotateAnimationHome">
                                 <a href="library/playlists" class="btn btn-yellow btn-block" data-id="playlists">Escuchalas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 mt-4 col-md-6">
-                <div class="card bg-dark text-white">
-                    <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
-                    <div class="card-img-overlay">
-                        <label class="color-yellow">COMUNIDAD</label>
-                        <h4 class="card-title fontBold">Ayudanos a mejorar</h4>
-                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
-                        </p>
-                        <p class="card-text"></p>
-                        <div class="row">
-                            <div class="col-md-8">
-                            </div>
-                            <div class="col-12 col-lg-4 text-right">
-                                <button class="btn btn-block btn-yellow" data-id="cummunity">Unite al grupo</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
             <div class="col-12 px-0 mt-4 col-md-6">
                 <div class="card bg-dark text-white">
                     <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
@@ -105,8 +87,27 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="row">
                             <div class="col-md-8">
                             </div>
-                            <div class="col-12 col-lg-4 text-right">
+                            <div class="col-12 col-lg-4 text-right rotateAnimationHome">
                                 <a href="library/favoritos" class="btn btn-yellow btn-block" data-id="favorite">Recordalos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 px-0 mt-4 col-md-6">
+                <div class="card bg-dark text-white">
+                    <img src="images/cardBackground.jpg" class="card-img cardImage" alt="...">
+                    <div class="card-img-overlay">
+                        <label class="color-yellow">COMUNIDAD</label>
+                        <h4 class="card-title fontBold">Ayudanos a mejorar</h4>
+                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
+                        </p>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-12 col-lg-4 text-right rotateAnimationHome">
+                                <button class="btn btn-block btn-yellow" data-id="cummunity">Unite al grupo</button>
                             </div>
                         </div>
                     </div>

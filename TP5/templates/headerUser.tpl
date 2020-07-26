@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-8 col-md-8">
                         <div class="form-group mt-2 mb-2">
-                            <input type="search" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
+                            <input type="search" placeholder="¿Que estas buscando?" class="form-control form-control-sm" id="searchInput">
                         </div>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">

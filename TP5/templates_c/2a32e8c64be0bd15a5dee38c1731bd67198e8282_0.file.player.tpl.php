@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 20:52:29
+/* Smarty version 3.1.32, created on 2020-07-26 12:51:35
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1cc5bdc807f7_08001733',
+  'unifunc' => 'content_5f1da687c96a74_27384317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595721148,
+      1 => 1595778638,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1cc5bdc807f7_08001733 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1da687c96a74_27384317 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 

@@ -2,6 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
+    let mediaSelected = '';
+
     const player = document.querySelector('#player');
     const namePlayer = document.querySelectorAll('.mediaNamePlayer');
     const artistPlayer = document.querySelectorAll('.mediaArtistPlayer');
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     const btnArrow = document.querySelector('#arrowOpenPlayer');
     document.querySelectorAll('.mediaDetail').forEach(r => {
         r.addEventListener('click', e => {
-            location.href = 'media-info';
+            location.href = 'media-info/' + mediaSelected;
         });
     });
 
@@ -33,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
             imagePlayer.forEach(f => {
                 f.src = 'images/songs/' + r.getAttribute('data-image') + '.jpg';
+                mediaSelected = r.getAttribute('data-image');
             });
 
 

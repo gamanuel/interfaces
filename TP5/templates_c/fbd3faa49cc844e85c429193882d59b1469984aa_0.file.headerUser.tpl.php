@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 19:37:53
+/* Smarty version 3.1.32, created on 2020-07-26 15:09:13
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1cb44199ab74_22363317',
+  'unifunc' => 'content_5f1dc6c9a5d476_11284052',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595716670,
+      1 => 1595786951,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1cb44199ab74_22363317 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1dc6c9a5d476_11284052 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -86,7 +86,7 @@ function content_5f1cb44199ab74_22363317 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="row">
                     <div class="col-8 col-md-8">
                         <div class="form-group mt-2 mb-2">
-                            <input type="search" placeholder="Que estas buscando?" class="form-control form-control-sm" id="searchInput">
+                            <input type="search" placeholder="¿Que estas buscando?" class="form-control form-control-sm" id="searchInput">
                         </div>
                     </div>
                     <div class="col-2 col-md-2 mt-2 mb-2">
