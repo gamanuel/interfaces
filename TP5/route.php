@@ -14,6 +14,7 @@
   $r->addRoute("library/:ID", "GET", "homeController", "getLibrary");  
   $r->addRoute("media-info/:ID", "GET", "homeController", "getMediaInfo");  
   $r->addRoute("search/:ID", "GET", "homeController", "getSearch");  
+  $r->addRoute("FAQS", "GET", "homeController", "getFAQS");  
 
   // Ruta default - debe ir al final 
   $r->addRoute("home", "GET", "homeController", "getHome");

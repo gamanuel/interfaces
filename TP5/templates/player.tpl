@@ -34,7 +34,7 @@
                     </div>
                     <div class="my-auto mx-5 text-black">
                         <i class="fas  fa-step-backward mx-2"></i>
-                        <i class="fas fa-play mx-2"></i>
+                        <i class="fas fa-play pointer mx-2 playBtnChange"></i>
                         <i class="fas fa-step-forward mx-2"></i>
                     </div>
                     <div class="ml-auto my-auto text-black pointer">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="my-auto mx-3 text-black">
                         <i class="fas   fa-step-backward mr-2"></i>
-                        <i class="fas  fa-play mx-2"></i>
+                        <i class="fas  fa-play pointer mx-2 playBtnChange"></i>
                         <i class="fas  fa-step-forward ml-2"></i>
                     </div>
                     <div class="ml-auto my-auto text-black pointer">

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12 mt-3 ">
                 <input type="hidden" value="{$id}" id="searchInputValue">
-                <h3 class="border-bottom fontBold">Tu busqueda: <span class="fontLight">{$id}</span></h3>
+                <h3 class="border-bottom fontBold tituloPage">Tu busqueda: <span class="fontLight">{$id}</span></h3>
             </div>
         </div>
     </div>

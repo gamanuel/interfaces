@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 14:04:56
+/* Smarty version 3.1.32, created on 2020-07-27 11:35:52
   from 'C:\xampp\htdocs\interfaces\TP5\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1c6638ee3873_38000413',
+  'unifunc' => 'content_5f1ee6485eed36_44449447',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8ccdae661066e9248a990ead03f60c4437ff7a25' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\header.tpl',
-      1 => 1595696652,
+      1 => 1595860338,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1c6638ee3873_38000413 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1ee6485eed36_44449447 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -51,7 +51,7 @@ function content_5f1c6638ee3873_38000413 (Smarty_Internal_Template $_smarty_tpl)
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-white spofiyHover" href="#">FAQS</a>
+                    <a class="nav-link text-white spofiyHover" href="FAQS">FAQS</a>
                 </li>
             
                 <li class="nav-item">

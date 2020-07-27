@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-26 12:51:35
+/* Smarty version 3.1.32, created on 2020-07-27 10:17:51
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1da687c96a74_27384317',
+  'unifunc' => 'content_5f1ed3ff810577_75113018',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595778638,
+      1 => 1595855833,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1da687c96a74_27384317 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1ed3ff810577_75113018 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
@@ -57,7 +57,7 @@ function content_5f1da687c96a74_27384317 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                     <div class="my-auto mx-5 text-black">
                         <i class="fas  fa-step-backward mx-2"></i>
-                        <i class="fas fa-play mx-2"></i>
+                        <i class="fas fa-play pointer mx-2 playBtnChange"></i>
                         <i class="fas fa-step-forward mx-2"></i>
                     </div>
                     <div class="ml-auto my-auto text-black pointer">
@@ -78,7 +78,7 @@ function content_5f1da687c96a74_27384317 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                     <div class="my-auto mx-3 text-black">
                         <i class="fas   fa-step-backward mr-2"></i>
-                        <i class="fas  fa-play mx-2"></i>
+                        <i class="fas  fa-play pointer mx-2 playBtnChange"></i>
                         <i class="fas  fa-step-forward ml-2"></i>
                     </div>
                     <div class="ml-auto my-auto text-black pointer">

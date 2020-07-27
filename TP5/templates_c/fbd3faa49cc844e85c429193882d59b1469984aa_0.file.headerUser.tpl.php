@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-26 15:09:13
+/* Smarty version 3.1.32, created on 2020-07-27 10:12:04
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1dc6c9a5d476_11284052',
+  'unifunc' => 'content_5f1ed2a4285bb3_00072880',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595786951,
+      1 => 1595855521,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1dc6c9a5d476_11284052 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1ed2a4285bb3_00072880 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -57,7 +57,7 @@ function content_5f1dc6c9a5d476_11284052 (Smarty_Internal_Template $_smarty_tpl)
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li> -->
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white spofiyHover" href="#">FAQS</a>
+                        <a class="nav-link text-white spofiyHover" href="FAQS">FAQS</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle text-white spofiyHover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

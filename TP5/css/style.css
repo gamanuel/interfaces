@@ -196,6 +196,19 @@
     display: block;
 }
 
+.btnFAQS:hover {
+    color: #FCA311 !important;
+    text-decoration: none;
+}
+
+.faqsDiv {
+    color: white;
+}
+
+.faqsDiv:hover {
+    color: #FCA311 !important;
+}
+
 @keyframes animation {
     0% {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);

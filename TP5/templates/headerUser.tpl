@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li> -->
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-white spofiyHover" href="#">FAQS</a>
+                        <a class="nav-link text-white spofiyHover" href="FAQS">FAQS</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle text-white spofiyHover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

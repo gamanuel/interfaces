@@ -191,12 +191,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
             <h5 class="">Canciones <span class="">(${cont})</span></h5>
             </div>`;
             tempD += template;
+            if (cont === 8) {
+                tempD += '<div class="col-md-12 text-center mt-3 "><a href="" class="text-dark">Ver más</a></div>';
+            }
         }
         if (contP > 0) {
             tempD += ` <div class="col-md-12 mt-3 ">
             <h5 class="">Playlists <span class="">(${contP})</span></h5>
             </div>`;
             tempD += templateP;
+            if (contP === 8) {
+                tempD += '<div class="col-md-12 text-center mt-3 "><a href="" class="text-dark">Ver más</a></div>';
+            }
         }
 
 

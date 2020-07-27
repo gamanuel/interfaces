@@ -45,4 +45,8 @@ class homeController extends securedController {
     $id = $params[':ID'];
     $this->homeView->getMediaInfo($id);
   }
+
+  public function getFAQS(){
+    $this->homeView->getFAQS();
+  }
 }

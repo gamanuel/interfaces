@@ -31,4 +31,8 @@ class homeView extends view {
         $this->smarty->display("templates/search.tpl"); 
     }
 
+    public function getFAQS(){
+        $this->smarty->display("templates/faqs.tpl");
+    }
+
 }

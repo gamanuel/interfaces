@@ -154,7 +154,7 @@
                     <div class="row no-gutters">
                         <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title"><img src="images/avatar/4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Savedra</h5>
+                                <h5 class="card-title"><img src="images/avatar/4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Saavedra</h5>
                                 <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>

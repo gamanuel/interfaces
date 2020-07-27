@@ -5,14 +5,14 @@
         <div class="row border-bottom ">
             {if $id == 'Tus playlists'}
             <div class="col-10 col-md-11 mt-3 ">
-                <h3 class="fontBold">{$id}</h3>
+                <h3 class="fontBold tituloPage">{$id}</h3>
             </div>
             <div class="col-2 col-md-1 mt-3 text-right">
                 <button class="btn  btn-outline-black btn-sm" data-toggle="modal" data-target="#modalPlaylist"><i class="fas fa-plus"></i></button>
             </div>
             {else}
             <div class="col-md-12 mt-3 ">
-                <h3 class=" fontBold">{$id}</h3>
+                <h3 class=" fontBold tituloPage">{$id}</h3>
             </div>
             {/if}
         </div>

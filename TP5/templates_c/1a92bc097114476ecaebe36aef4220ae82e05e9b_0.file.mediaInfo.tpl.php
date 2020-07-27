@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 20:36:47
+/* Smarty version 3.1.32, created on 2020-07-27 12:14:00
   from 'C:\xampp\htdocs\interfaces\TP5\templates\mediaInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1cc20f3d4251_39220241',
+  'unifunc' => 'content_5f1eef3851d682_59127424',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a92bc097114476ecaebe36aef4220ae82e05e9b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\mediaInfo.tpl',
-      1 => 1595720178,
+      1 => 1595862837,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1cc20f3d4251_39220241 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1eef3851d682_59127424 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -181,7 +181,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     <div class="row no-gutters">
                         <div class="col-12 col-md-12">
                             <div class="card-body">
-                                <h5 class="card-title"><img src="images/avatar/4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Savedra</h5>
+                                <h5 class="card-title"><img src="images/avatar/4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Saavedra</h5>
                                 <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>

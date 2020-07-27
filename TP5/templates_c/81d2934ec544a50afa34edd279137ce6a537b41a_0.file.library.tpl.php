@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-25 19:31:26
+/* Smarty version 3.1.32, created on 2020-07-27 12:41:02
   from 'C:\xampp\htdocs\interfaces\TP5\templates\library.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1cb2bea02169_44614321',
+  'unifunc' => 'content_5f1ef58e68dce3_07342322',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81d2934ec544a50afa34edd279137ce6a537b41a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\library.tpl',
-      1 => 1595716284,
+      1 => 1595864421,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:player.tpl' => 1,
   ),
 ),false)) {
-function content_5f1cb2bea02169_44614321 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1ef58e68dce3_07342322 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
         <div class="row border-bottom ">
             <?php if ($_smarty_tpl->tpl_vars['id']->value == 'Tus playlists') {?>
             <div class="col-10 col-md-11 mt-3 ">
-                <h3 class="fontBold"><?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+                <h3 class="fontBold tituloPage"><?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 </h3>
             </div>
             <div class="col-2 col-md-1 mt-3 text-right">
@@ -40,7 +40,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
             </div>
             <?php } else { ?>
             <div class="col-md-12 mt-3 ">
-                <h3 class=" fontBold"><?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+                <h3 class=" fontBold tituloPage"><?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 </h3>
             </div>
             <?php }?>

@@ -5,7 +5,7 @@
 
         <div class="row">
             <div class="col-md-12 mt-3 ">
-                <h3 class="border-bottom fontBold">Home</h3>
+                <h3 class="border-bottom fontBold tituloPage">Home</h3>
             </div>
         </div>
         <div class="card-deck">

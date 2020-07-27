@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-26 13:03:51
+/* Smarty version 3.1.32, created on 2020-07-27 12:42:49
   from 'C:\xampp\htdocs\interfaces\TP5\templates\homeUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1da967225302_00763666',
+  'unifunc' => 'content_5f1ef5f970f9b8_58777987',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5a200925d0b71e67531d8a7c3aee29096e190d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\homeUser.tpl',
-      1 => 1595779429,
+      1 => 1595864428,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1da967225302_00763666 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1ef5f970f9b8_58777987 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
 
         <div class="row">
             <div class="col-md-12 mt-3 ">
-                <h3 class="border-bottom fontBold">Home</h3>
+                <h3 class="border-bottom fontBold tituloPage">Home</h3>
             </div>
         </div>
         <div class="card-deck">
