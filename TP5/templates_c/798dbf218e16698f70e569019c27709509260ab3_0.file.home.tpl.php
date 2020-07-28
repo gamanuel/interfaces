@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 20:42:59
+/* Smarty version 3.1.32, created on 2020-07-27 23:00:49
   from 'C:\xampp\htdocs\interfaces\TP5\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1f6683792424_41269730',
+  'unifunc' => 'content_5f1f86d155c5c3_78952449',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '798dbf218e16698f70e569019c27709509260ab3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\home.tpl',
-      1 => 1595893362,
+      1 => 1595901647,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1f6683792424_41269730 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f86d155c5c3_78952449 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -120,7 +120,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesión</button>
 
                     <div class="text-center mt-3">
-                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta? Registrate aquí</a>
+                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta?     <span class="ml-1" style="text-decoration: underline;">     Registrate aquí</span></a>
                     </div>
                 </form>
             </div>

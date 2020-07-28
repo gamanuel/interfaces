@@ -85,7 +85,7 @@
                     <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesión</button>
 
                     <div class="text-center mt-3">
-                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta? Registrate aquí</a>
+                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta?     <span class="ml-1" style="text-decoration: underline;">     Registrate aquí</span></a>
                     </div>
                 </form>
             </div>
