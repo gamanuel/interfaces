@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 10:17:51
+/* Smarty version 3.1.32, created on 2020-07-27 19:54:21
   from 'C:\xampp\htdocs\interfaces\TP5\templates\player.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1ed3ff810577_75113018',
+  'unifunc' => 'content_5f1f5b1d929c58_25000936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a32e8c64be0bd15a5dee38c1731bd67198e8282' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\player.tpl',
-      1 => 1595855833,
+      1 => 1595890460,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1ed3ff810577_75113018 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f5b1d929c58_25000936 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class=" position-fixed d-none" id="player" style="bottom: 0; width: 100%;">
     <div class="bg-yellow">
 
@@ -74,7 +74,7 @@ function content_5f1ed3ff810577_75113018 (Smarty_Internal_Template $_smarty_tpl)
                     <i class="my-auto pr-2 fas fa-1x fa-chevron-up pointer" data-toggle="collapse" href="#collapsePlayer" id="arrowOpenPlayer"></i>
                     <div class="mx-2 mediaDetail">
                         <p class="mx-2 text-black m-0 d-block mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> </strong></p>
-                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate"> <strong> </strong></small>
+                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate" style="max-width: 130px;"> <strong> </strong></small>
                     </div>
                     <div class="my-auto mx-3 text-black">
                         <i class="fas   fa-step-backward mr-2"></i>

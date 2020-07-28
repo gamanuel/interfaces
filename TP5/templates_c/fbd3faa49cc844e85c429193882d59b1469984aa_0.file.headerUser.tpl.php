@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 10:12:04
+/* Smarty version 3.1.32, created on 2020-07-27 20:51:03
   from 'C:\xampp\htdocs\interfaces\TP5\templates\headerUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1ed2a4285bb3_00072880',
+  'unifunc' => 'content_5f1f6867b38012_99516456',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fbd3faa49cc844e85c429193882d59b1469984aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\headerUser.tpl',
-      1 => 1595855521,
+      1 => 1595893861,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1ed2a4285bb3_00072880 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f6867b38012_99516456 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -84,16 +84,16 @@ function content_5f1ed2a4285bb3_00072880 (Smarty_Internal_Template $_smarty_tpl)
         <div class="bg-yellow shadow ">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-md-8">
-                        <div class="form-group mt-2 mb-2">
-                            <input type="search" placeholder="¿Que estas buscando?" class="form-control form-control-sm" id="searchInput">
+                    <div class="col-8 col-md-10">
+                        <div class="input-group  mt-2 mb-2">
+                            <input type="search" placeholder="¿Qué estas buscando?" class="form-control form-control-sm" id="searchInput">
+                             <div class="input-group-append">
+                                 <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
-                    </div>
-                    <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters"><i class="fas fa-filter" ></i></button>
+                    <div class="col-4 col-md-2 mt-2 mb-2">
+                        <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters">Filtros</button>
                     </div>
                 </div>
 
@@ -108,13 +108,13 @@ function content_5f1ed2a4285bb3_00072880 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <div class="row">
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Generos</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Géneros</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Artistas</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Albumes</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Álbumes</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Podcasts</button>

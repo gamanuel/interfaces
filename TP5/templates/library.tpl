@@ -46,8 +46,9 @@
         <label > Canción: <strong id="songNameAddToPlaylist"></strong> </label>
         <select class="form-control" id="exampleFormControlSelect1">
             <option>Seleccione una playlist</option>
+            <option>  Nueva playlist </strong></option>
             <option>Previa</option>
-            <option>Musica para gym</option>
+            <option>Música para gym</option>
             <option>Cachengue</option>
             <option>Tropical House</option>
             <option>Deep House</option>
@@ -62,9 +63,11 @@
   </div>
 </div>
 
-{include file="footer.tpl"}
 <script src="js/library.js?v1.3"></script>
+{include file="footerPage.tpl"}
+{include file="footer.tpl"}
 {include file="player.tpl"}
+
 
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 11:35:52
+/* Smarty version 3.1.32, created on 2020-07-27 20:12:02
   from 'C:\xampp\htdocs\interfaces\TP5\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1ee6485eed36_44449447',
+  'unifunc' => 'content_5f1f5f42ad0a51_17640132',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8ccdae661066e9248a990ead03f60c4437ff7a25' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\header.tpl',
-      1 => 1595860338,
+      1 => 1595891520,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1ee6485eed36_44449447 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f5f42ad0a51_17640132 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -55,7 +55,10 @@ function content_5f1ee6485eed36_44449447 (Smarty_Internal_Template $_smarty_tpl)
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link text-white spofiyHover" href="" data-toggle="modal" data-target="#loginModal"><i class="far fa-user-circle " ></i> Iniciar Sesion</a>
+                    <a class="nav-link text-white spofiyHover" href="" data-toggle="modal" data-target="#loginModal">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white spofiyHover" href="">Registrarse</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

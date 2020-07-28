@@ -129,6 +129,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
                         <i class="fas fa-ellipsis-v pointer"  data-toggle="dropdown"></i>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item addToPLaylist" href="#">Agregar a una playlist</a>
+                            <a class="dropdown-item  pointer">Añadir a la cola</a>
+                            <a class="dropdown-item  pointer">Ir al album</a>
+                            <a class="dropdown-item  pointer">Ir al artista</a>
+
                         </div>
                     </div>
                 </div>
@@ -154,13 +158,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
                                     <p>${item.songs} canciones</p>
                                 </div>
                                 <div class="col-md-12">
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                </div>
-                                <div class="col-md-12">
                                     <small>${item.date}</small>
                                 </div>
                             </div>
@@ -171,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
                                     <i class="fas fa-ellipsis-v fa-1x "></i>
                                 </div>
                             </div>
-                            <div class="row mt-6">
+                            <div class="row mt-5">
                                 <div class="col-md-12">
                                     <i class="fas  fa-play fa-1x"></i>
 

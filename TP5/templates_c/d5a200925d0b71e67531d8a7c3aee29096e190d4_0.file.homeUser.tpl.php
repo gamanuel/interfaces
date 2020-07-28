@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 12:42:49
+/* Smarty version 3.1.32, created on 2020-07-27 20:33:38
   from 'C:\xampp\htdocs\interfaces\TP5\templates\homeUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1ef5f970f9b8_58777987',
+  'unifunc' => 'content_5f1f6452f05cf2_40024574',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5a200925d0b71e67531d8a7c3aee29096e190d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\homeUser.tpl',
-      1 => 1595864428,
+      1 => 1595891775,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'file:headerUser.tpl' => 1,
     'file:player.tpl' => 1,
+    'file:footerPage.tpl' => 1,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1ef5f970f9b8_58777987 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f6452f05cf2_40024574 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -42,7 +43,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     <div class="card-img-overlay">
                         <label class="color-yellow">NUESTRAS</label>
                         <h4 class="card-title fontBold">Recomendaciones</h4>
-                        <p class="card-text">Podras escuchar todas las canciones que nuestro equipo ha seleccionado especialmente para vos.
+                        <p class="card-text">Podrás escuchar todas las canciones que nuestro equipo ha seleccionado especialmente para vos.
                         </p>
                         <p class="card-text"></p>
                         <div class="row ">
@@ -61,7 +62,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     <div class="card-img-overlay">
                         <label class="color-yellow">TUS</label>
                         <h4 class="card-title fontBold">Playlists</h4>
-                        <p class="card-text">Creá tus listas, compartilas con tus amigos, agrega toda la musica que quieras, donde quieras.
+                        <p class="card-text">Creá tus listas, compartílas con tus amigos, agregá toda la música que quieras, donde quieras.
                         </p>
                         <p class="card-text"></p>
                         <div class="row">
@@ -100,7 +101,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                     <div class="card-img-overlay">
                         <label class="color-yellow">COMUNIDAD</label>
                         <h4 class="card-title fontBold">Ayudanos a mejorar</h4>
-                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
+                        <p class="card-text">Valorá lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
                         </p>
                         <p class="card-text"></p>
                         <div class="row">
@@ -120,7 +121,10 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
 
 
 <?php $_smarty_tpl->_subTemplateRender("file:player.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?> <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?> 
+
+<?php $_smarty_tpl->_subTemplateRender("file:footerPage.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <?php echo '<script'; ?>

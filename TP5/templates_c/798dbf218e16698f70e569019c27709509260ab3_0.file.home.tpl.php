@@ -1,28 +1,29 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-23 20:24:18
+/* Smarty version 3.1.32, created on 2020-07-27 20:42:59
   from 'C:\xampp\htdocs\interfaces\TP5\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1a1c22c3c469_28136540',
+  'unifunc' => 'content_5f1f6683792424_41269730',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '798dbf218e16698f70e569019c27709509260ab3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\home.tpl',
-      1 => 1595546657,
+      1 => 1595893362,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:header.tpl' => 1,
+    'file:footerPage.tpl' => 1,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1a1c22c3c469_28136540 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f6683792424_41269730 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -31,15 +32,15 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
         <div class="row text-white text-center ">
             <div class="col-md-3"></div>
             <div class="col-md-6 marginTop-10">
-                <h2 class="titleHome"> <span class="fontLight">Escucha tu musica</span> <br> <span class="fontBlack"></span>donde quieras, cuando quieras</span>
+                <h2 class="titleHome"> <span class="fontLight">Escuchá tu música</span> <br> <span class="fontBlack"></span>donde quieras, cuando quieras</span>
                 </h2>
             </div>
             <div class="col-md-3"></div>
         </div>
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 mt-4"><button class="btn btn-yellow btn-block">Empezar ahora</button></div>
-            <div class="col-md-4"></div>
+            <div class="col-3 col-md-4"></div>
+            <div class="col-6 col-md-4 mt-4"><button class="btn btn-yellow btn-block" data-toggle="modal" data-target="#loginModal">Empezar ahora</button></div>
+            <div class="col-3 col-md-4"></div>
         </div>
     </div>
 </section>
@@ -78,7 +79,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <div class="container">
         <div class="row">
             <div class="col-md-12   text-center">
-                <h5 class="fontBold mt-4">Todavia no tenes una cuenta?</h5>
+                <h5 class="fontBold mt-4">¿Todavía no tenés una cuenta?</h5>
             </div>
         </div>
         <div class="row">
@@ -114,10 +115,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <input type="password" class="form-control" id="password">
                     </div>
 
-                    <div class="text-center text-danger" id="alertContainer"></div>
+                    <div class=" text-center text-danger" id="alertContainer"></div>
 
-                    <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesion</button>
-                    <button type="button" class="btn mt-3  btn-block btn-outline-light">Registrarse</button>
+                    <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesión</button>
+
+                    <div class="text-center mt-3">
+                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta? Registrate aquí</a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -126,8 +130,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 
 
-
-<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+<?php $_smarty_tpl->_subTemplateRender("file:footerPage.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?> <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
  src="js/home.js"><?php echo '</script'; ?>
 >

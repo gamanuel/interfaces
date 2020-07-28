@@ -60,16 +60,16 @@
         <div class="bg-yellow shadow ">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-md-8">
-                        <div class="form-group mt-2 mb-2">
-                            <input type="search" placeholder="¿Que estas buscando?" class="form-control form-control-sm" id="searchInput">
+                    <div class="col-8 col-md-10">
+                        <div class="input-group  mt-2 mb-2">
+                            <input type="search" placeholder="¿Qué estas buscando?" class="form-control form-control-sm" id="searchInput">
+                             <div class="input-group-append">
+                                 <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-black" id="btnSearch"><i class="fas fa-search"></i></button>
-                    </div>
-                    <div class="col-2 col-md-2 mt-2 mb-2">
-                        <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters"><i class="fas fa-filter" ></i></button>
+                    <div class="col-4 col-md-2 mt-2 mb-2">
+                        <button class="btn btn-block btn-sm btn-outline-black" data-toggle="collapse" href="#collapseFilters">Filtros</button>
                     </div>
                 </div>
 
@@ -84,13 +84,13 @@
                 </div>
                 <div class="row">
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Generos</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Géneros</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Artistas</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
-                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Albumes</button>
+                        <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Álbumes</button>
                     </div>
                     <div class="col-4 col-md-2 mt-1 mb-3">
                         <button class="btn btn-block btn-sm btn-outline-yellow btnFilter">Podcasts</button>

@@ -73,7 +73,7 @@
     </div>
 </section>
 
-
+{include file="footerPage.tpl"}
 
 {include file="footer.tpl"}
 

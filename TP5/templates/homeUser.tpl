@@ -15,7 +15,7 @@
                     <div class="card-img-overlay">
                         <label class="color-yellow">NUESTRAS</label>
                         <h4 class="card-title fontBold">Recomendaciones</h4>
-                        <p class="card-text">Podras escuchar todas las canciones que nuestro equipo ha seleccionado especialmente para vos.
+                        <p class="card-text">Podrás escuchar todas las canciones que nuestro equipo ha seleccionado especialmente para vos.
                         </p>
                         <p class="card-text"></p>
                         <div class="row ">
@@ -34,7 +34,7 @@
                     <div class="card-img-overlay">
                         <label class="color-yellow">TUS</label>
                         <h4 class="card-title fontBold">Playlists</h4>
-                        <p class="card-text">Creá tus listas, compartilas con tus amigos, agrega toda la musica que quieras, donde quieras.
+                        <p class="card-text">Creá tus listas, compartílas con tus amigos, agregá toda la música que quieras, donde quieras.
                         </p>
                         <p class="card-text"></p>
                         <div class="row">
@@ -73,7 +73,7 @@
                     <div class="card-img-overlay">
                         <label class="color-yellow">COMUNIDAD</label>
                         <h4 class="card-title fontBold">Ayudanos a mejorar</h4>
-                        <p class="card-text">Valora lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
+                        <p class="card-text">Valorá lo que escuches y se parte de la comunidad de spofiy, animate y dejanos tu comentario...
                         </p>
                         <p class="card-text"></p>
                         <div class="row">
@@ -92,7 +92,10 @@
 </section>
 
 
-{include file="player.tpl"} {include file="footer.tpl"}
+{include file="player.tpl"} 
+
+{include file="footerPage.tpl"}
+{include file="footer.tpl"}
 
 <script src="js/homeUser.js"></script>
 

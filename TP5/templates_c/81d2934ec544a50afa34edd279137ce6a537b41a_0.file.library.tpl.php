@@ -1,29 +1,30 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 12:41:02
+/* Smarty version 3.1.32, created on 2020-07-27 20:17:00
   from 'C:\xampp\htdocs\interfaces\TP5\templates\library.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1ef58e68dce3_07342322',
+  'unifunc' => 'content_5f1f606c661441_55333623',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81d2934ec544a50afa34edd279137ce6a537b41a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\library.tpl',
-      1 => 1595864421,
+      1 => 1595891797,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:headerUser.tpl' => 1,
+    'file:footerPage.tpl' => 1,
     'file:footer.tpl' => 1,
     'file:player.tpl' => 1,
   ),
 ),false)) {
-function content_5f1ef58e68dce3_07342322 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f606c661441_55333623 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -75,8 +76,9 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
         <label > Canción: <strong id="songNameAddToPlaylist"></strong> </label>
         <select class="form-control" id="exampleFormControlSelect1">
             <option>Seleccione una playlist</option>
+            <option>  Nueva playlist </strong></option>
             <option>Previa</option>
-            <option>Musica para gym</option>
+            <option>Música para gym</option>
             <option>Cachengue</option>
             <option>Tropical House</option>
             <option>Deep House</option>
@@ -91,12 +93,14 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
   </div>
 </div>
 
-<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-echo '<script'; ?>
+<?php echo '<script'; ?>
  src="js/library.js?v1.3"><?php echo '</script'; ?>
 >
-<?php $_smarty_tpl->_subTemplateRender("file:player.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+<?php $_smarty_tpl->_subTemplateRender("file:footerPage.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender("file:player.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+
 
 
 

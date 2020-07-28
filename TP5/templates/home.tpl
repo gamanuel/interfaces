@@ -5,15 +5,15 @@
         <div class="row text-white text-center ">
             <div class="col-md-3"></div>
             <div class="col-md-6 marginTop-10">
-                <h2 class="titleHome"> <span class="fontLight">Escucha tu musica</span> <br> <span class="fontBlack"></span>donde quieras, cuando quieras</span>
+                <h2 class="titleHome"> <span class="fontLight">Escuchá tu música</span> <br> <span class="fontBlack"></span>donde quieras, cuando quieras</span>
                 </h2>
             </div>
             <div class="col-md-3"></div>
         </div>
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 mt-4"><button class="btn btn-yellow btn-block">Empezar ahora</button></div>
-            <div class="col-md-4"></div>
+            <div class="col-3 col-md-4"></div>
+            <div class="col-6 col-md-4 mt-4"><button class="btn btn-yellow btn-block" data-toggle="modal" data-target="#loginModal">Empezar ahora</button></div>
+            <div class="col-3 col-md-4"></div>
         </div>
     </div>
 </section>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="row">
-            {foreach from=[1,2,3,4] item=item  key=list}
+            {foreach from=[1,2,3,4] item=item key=list}
             <div class="col-6 col-md-3 col-lg-3 p-4">
                 <img src="images/songs/{$list}.jpg" alt="..." class="img-thumbnail">
             </div>
@@ -44,7 +44,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12   text-center">
-                <h5 class="fontBold mt-4">Todavia no tenes una cuenta?</h5>
+                <h5 class="fontBold mt-4">¿Todavía no tenés una cuenta?</h5>
             </div>
         </div>
         <div class="row">
@@ -80,10 +80,13 @@
                         <input type="password" class="form-control" id="password">
                     </div>
 
-                    <div class="text-center text-danger" id="alertContainer"></div>
+                    <div class=" text-center text-danger" id="alertContainer"></div>
 
-                    <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesion</button>
-                    <button type="button" class="btn mt-3  btn-block btn-outline-light">Registrarse</button>
+                    <button type="button" class="btn mt-4 btn-block btn-yellow" id="btnLogin">Iniciar Sesión</button>
+
+                    <div class="text-center mt-3">
+                        <a href="" class="text-center text-white ">¿Aún no tenés cuenta? Registrate aquí</a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -92,8 +95,7 @@
 
 
 
-
-{include file="footer.tpl"}
+{include file="footerPage.tpl"} {include file="footer.tpl"}
 <script src="js/home.js"></script>
 
 

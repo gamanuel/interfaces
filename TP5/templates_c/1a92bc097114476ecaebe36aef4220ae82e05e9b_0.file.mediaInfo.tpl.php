@@ -1,28 +1,29 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-07-27 12:14:00
+/* Smarty version 3.1.32, created on 2020-07-27 20:19:59
   from 'C:\xampp\htdocs\interfaces\TP5\templates\mediaInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5f1eef3851d682_59127424',
+  'unifunc' => 'content_5f1f611f034749_51867184',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a92bc097114476ecaebe36aef4220ae82e05e9b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\interfaces\\TP5\\templates\\mediaInfo.tpl',
-      1 => 1595862837,
+      1 => 1595891997,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:headerUser.tpl' => 1,
+    'file:footerPage.tpl' => 1,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f1eef3851d682_59127424 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f611f034749_51867184 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -46,10 +47,10 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12 mt-2">
-                        <h4 class="fontBold" id="nameMedia">Queen</h4>
+                        <h4 class="fontBold" id="nameMedia"></h4>
                     </div>
                     <div class="col-md-12">
-                        <small class="text-muted fontBold" id="artistMedia">Brian May · Roger Taylor · Freddie Mercury (fallecido) · John Deacon</small>
+                        <small class="text-muted fontBold" id="artistMedia"></small>
                     </div>
                     <div class="col-md-12 mt-2">
                         <i class="fas  d-inline fa-1x fa-star"></i>
@@ -77,10 +78,10 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
     <div class="container">
         <div class="row">
             <div class="col-md-9 mt-2">
-                <textarea class="form-control" id="opinionText" placeholder="Danos tu opinion..." rows="2"></textarea>
+                <textarea class="form-control" id="opinionText" placeholder="Danos tu opinión..." rows="2"></textarea>
             </div>
             <div class="col-md-3 text-center my-auto mt-2 pointer">
-                <div class="my-auto d-flex  starDivContainer">
+                <div class="my-auto d-flex py-2  starDivContainer">
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="1"></i>
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="2"></i>
                             <i class="far mx-auto fa-2x fa-star rateDesktop " data-id="3"></i>
@@ -95,7 +96,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
 
             </div>
             <div class="col-md-3">
-                <button class="btn btn-blue btn-block btn-sm mt-2" id="publishOpinion">Publica tu opinión</button>
+                <button class="btn btn-blue btn-block btn-sm mt-2" id="publishOpinion">Publicá tu opinión</button>
             </div>
         </div>
     </div>
@@ -108,7 +109,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="col-12 col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSAkjktNk_waKZ6A064JikKQRYLxoKPNIUR_g&usqp=CAU" class="card-img imagenCardUser rounded-pill mr-2"> Yanina Latorre</h5>
-                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text">No me gusta para nada, muy mala canción</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
@@ -128,7 +129,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="col-12 col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title"><img src="images/avatar/5.jpg" class="card-img imagenCardUser  rounded-pill mr-2">Roberto Oscar Garcia</h5>
-                                <p class="card-text">Queen fue absolutamente la mejor banda del día.</p>
+                                <p class="card-text">Me gustó bastante.</p>
                                 <p class="card-text "><small class="text-muted">
                                      <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="fas  text-dark d-inline fa-1x fa-star"></i>
@@ -146,7 +147,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="col-12 col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title"><img src="images/avatar/2.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Manuel Rivas</h5>
-                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text">Muy buena la calidad de los graves y buenos sonidos</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
@@ -164,7 +165,7 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="col-12 col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title"><img src="images/avatar/3.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Martin Villa</h5>
-                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text">ZARPADOOOOOOOOOO en malo</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="far text-dark d-inline fa-1x fa-star"></i>
@@ -182,12 +183,12 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
                         <div class="col-12 col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title"><img src="images/avatar/4.jpg" class="card-img imagenCardUser rounded-pill mr-2"> Sebastian Saavedra</h5>
-                                <p class="card-text">Queen no me gusta para nada. Son muy malas las canciones</p>
+                                <p class="card-text">Yo me casé con este tema.</p>
                                 <p class="card-text"><small class="text-muted"> 
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="fas text-dark d-inline fa-1x fa-star"></i>
-                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
-                                    <i class="far text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
+                                    <i class="fas text-dark d-inline fa-1x fa-star"></i>
                                     <i class="far text-dark d-inline fa-1x fa-star"></i></small></p>
                             </div>
                         </div>
@@ -199,6 +200,9 @@ $_smarty_tpl->_subTemplateRender("file:headerUser.tpl", $_smarty_tpl->cache_id, 
     </div>
 
 </section>
+
+<?php $_smarty_tpl->_subTemplateRender("file:footerPage.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>

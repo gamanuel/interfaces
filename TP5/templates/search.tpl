@@ -7,6 +7,10 @@
                 <input type="hidden" value="{$id}" id="searchInputValue">
                 <h3 class="border-bottom fontBold tituloPage">Tu busqueda: <span class="fontLight">{$id}</span></h3>
             </div>
+            <div class="col-md-12">
+                <span class="badge badge-pill badge-secondary">Canciones</span>
+                <span class="badge badge-pill badge-secondary">Playlists</span>
+            </div>
         </div>
     </div>
 
@@ -23,4 +27,6 @@
 
 </section>
 
-{include file="player.tpl"} {include file="footer.tpl"}
+
+{include file="player.tpl"}
+{include file="footerPage.tpl"} {include file="footer.tpl"}

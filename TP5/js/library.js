@@ -104,6 +104,10 @@ document.addEventListener('DOMContentLoaded', r => {
                         <i class="fas fa-ellipsis-v pointer"  data-toggle="dropdown"></i>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item addToPLaylist pointer" data-name="${item.name}">Agregar a una playlist</a>
+                            <a class="dropdown-item  pointer">Añadir a la cola</a>
+                            <a class="dropdown-item  pointer">Ir al album</a>
+                            <a class="dropdown-item  pointer">Ir al artista</a>
+
                         </div>
                     </div>
                 </div>
@@ -147,13 +151,7 @@ document.addEventListener('DOMContentLoaded', r => {
                                 <div class="col-md-12">
                                     <p>${item.songs} canciones</p>
                                 </div>
-                                <div class="col-md-12">
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                    <i class="far  d-inline fa-1x fa-star"></i>
-                                </div>
+                                
                                 <div class="col-md-12">
                                     <small>${item.date}</small>
                                 </div>
@@ -169,7 +167,7 @@ document.addEventListener('DOMContentLoaded', r => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-6">
+                            <div class="row mt-5">
                                 <div class="col-md-12 playButton pointer" data-id="${cont}" data-name="${songs[cont].name}" data-artist="${songs[cont].artist}" data-image="${songs[cont].image}">
                                     <i class="fas  fa-play fa-1x"></i>
                                 </div>

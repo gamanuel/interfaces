@@ -51,7 +51,7 @@
                     <i class="my-auto pr-2 fas fa-1x fa-chevron-up pointer" data-toggle="collapse" href="#collapsePlayer" id="arrowOpenPlayer"></i>
                     <div class="mx-2 mediaDetail">
                         <p class="mx-2 text-black m-0 d-block mediaNamePlayer text-truncate" style="max-width: 130px;"> <strong> </strong></p>
-                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate"> <strong> </strong></small>
+                        <small class="mx-2 text-black d-block text-white mediaArtistPlayer text-truncate" style="max-width: 130px;"> <strong> </strong></small>
                     </div>
                     <div class="my-auto mx-3 text-black">
                         <i class="fas   fa-step-backward mr-2"></i>

@@ -31,7 +31,10 @@
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link text-white spofiyHover" href="" data-toggle="modal" data-target="#loginModal"><i class="far fa-user-circle " ></i> Iniciar Sesion</a>
+                    <a class="nav-link text-white spofiyHover" href="" data-toggle="modal" data-target="#loginModal">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white spofiyHover" href="">Registrarse</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
